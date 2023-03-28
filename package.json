@@ -1,0 +1,24 @@
+{
+    "name": "website-components-template",
+    "packageManager": "yarn@3.3.0",
+    "private": true,
+    "workspaces": [
+        "src/*",
+        "src/_shared/*",
+        "builder",
+        "server"
+    ],
+    "scripts": {
+        "build": "cd builder && yarn run build",
+        "build:dev": "cd builder && yarn run build:dev",
+        "watch:tunnel": "cd builder && yarn run watch:tunnel",
+        "watch:local": "cd builder && yarn run watch:local",
+        "build:prod": "cd builder && yarn run build:prod",
+        "build:prod-commit": "cd builder && yarn run build:prod-commit",
+        "build:prod-copy": "cd builder && yarn run build:prod-copy",
+        "build:prod-copy-commit": "cd builder && yarn run build:prod-copy-commit",
+        "serve": "cd server && yarn run serve",
+        "mkt": "module=MarketingWebsite yarn build:dev",
+        "mkt:prod": "module=MarketingWebsite yarn build:prod"
+    }
+}

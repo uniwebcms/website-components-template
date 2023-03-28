@@ -1,0 +1,18 @@
+{
+    "name": "xtwind",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "main": "index.js",
+    "peerDependencies": {
+        "react": "*"
+    },
+    "dependencies": {
+        "@tailwindcss/typography": "^0.5.0",
+        "@twind/aspect-ratio": "^0.1.4",
+        "@twind/line-clamp": "^0.1.1",
+        "@twind/react": "^0.0.4",
+        "react": "^18.2.0",
+        "twind": "^0.16.17"
+    }
+}
