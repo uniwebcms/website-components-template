@@ -1,8 +1,8 @@
 # Uniweb Website Component Template
 
-This repository is a complete template for creating **widget collections** for the [Uniweb CMS](https://uniwebcms.com) application and the websites made with it. Each widget collection acts as a software plugin. The [widget development documentation](https://help.uniweb.app/) explains the programming framework, which is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack](https://webpack.js.org/).
+This repository is a template for creating **component collections** suitable to be used in websites made with [Uniweb CMS](https://uniwebcms.com). The [component development documentation](https://help.uniweb.app/) explains the programming framework, which is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack](https://webpack.js.org/).
 
-:stopwatch: It should take about 5 minutes to get started building and testing a widget collection using this repository. You do not need to install any tools. All you need is a free [Cloudflare Pages](https://pages.cloudflare.com) project and edit access to a Uniweb website. It is also possible to build and test your widget collections locally.
+:stopwatch: It should take about 5 minutes to get started building and testing a component collection using this repository. You do not need to install any tools. All you need is a free [Cloudflare Pages](https://pages.cloudflare.com) project and edit access to a Uniweb website. It is also possible to build and test your component collections locally.
 
 ## Setting up a distribution server
 
@@ -18,6 +18,10 @@ Start by creating a [Cloudflare Pages](https://pages.cloudflare.com/) project an
 yarn build
 ```
 
+Configure the Cloudflare Pages project as shown below.
+
+![img.png](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/assets/cloudflare/simpleBuildSetting.png)
+
 The **target collection** of the build is defined in the environment variable `TARGET_COLLECTION` located in the `.env` file of this repository. The default value is `MainCollection`. You can edit the `.env` file and set a new value for it, or you can manage its value directly in your Cloudflare project, which has higher precedence that the one in `.env`.
 
 Every time you commit to your main branch, a production build will be executed automatically.
@@ -26,30 +30,30 @@ Every time you commit to your main branch, a production build will be executed a
 
 If you prefer building your distribution locally, simply leave the _Build command_ blank. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
 
-### Setup step 2: Link your widget collection to a website
+### Setup step 2: Link your component collection to a website
 
-A widget collection can be linked to a website for production or development purposes. For development, you switch a website into **dev mode** and then provide a URL to a widget collection for testing purposes. For production, you have to create a **widget collection profile** with information about the collection. The specific steps for each case are described in the following subsections.
+A component collection can be linked to a website for production or development purposes. For development, you switch a website into **dev mode** and then provide a URL to a component collection for testing purposes. For production, you have to create a **component collection profile** with information about the collection. The specific steps for each case are described in the following subsections.
 
 #### **Linking a collection for development purposes** :tractor:
 
-Here we assume that you have access to a [Uniweb instance](https://help.uniweb.app/uniweb_instance) where you can create a [website](https://help.uniweb.app/website). You can use an existing website or create a new one. You will configure the website to request your choice of **widget collection**.
+Here we assume that you have access to a [Uniweb instance](https://help.uniweb.app/uniweb_instance) where you can create a [website](https://help.uniweb.app/website). You can use an existing website or create a new one. You will configure the website to request your choice of **component collection**.
 
 If you don't have a website, create a [docufolio](https://help.uniweb.app/docufolio) of type _website content_ and add some basic text. For example, let the content be just a single topic and some text, like a "Hello world" title. Then a create website that uses the new docufolio as its contents.
 
-Let's begins by connecting the **Widget Collection** to the **dev mode** of a website.
+Let's begins by connecting the **Component Collection** to the **dev mode** of a website.
 
 1. Open a website and turn on **dev mode**.
 
-2. Set the widget collection URL. If you are distributing your builds with Cloudflare, use the public URL of your Cloudflare project. If you are using a public tunnel to localhost, use the URL of the tunnel.
+2. Set the component collection URL. If you are distributing your builds with Cloudflare, use the public URL of your Cloudflare project. If you are using a public tunnel to localhost, use the URL of the tunnel.
 3. Apply the changes.
 
-You should now see that the website is using the widgets defined in the widget collection that you selected.
+You should now see that the website is using the components defined in the component collection that you selected.
 
 #### **Linking your collections to a live website** :rocket:
 
-You can link a widget collection to a docufiolio as its **default styler**. In addition, a website can override the default styler set in a source docufolio by setting its own styler.
+You can link a component collection to a docufiolio as its **default styler**. In addition, a website can override the default styler set in a source docufolio by setting its own styler.
 
-Before linking a widget collection to a docufolio and/or to a website, you must create [widget collection profile](help.uniweb.app/creating_a_widget_collection_profile) for it with basic information about its distribution URL, description, and optional links to its documentation and source code.
+Before linking a component collection to a docufolio and/or to a website, you must create [component collection profile](help.uniweb.app/creating_a_widget_collection_profile) for it with basic information about its distribution URL, description, and optional links to its documentation and source code.
 
 In a docufolio, open its settings and choose the desired collection profile in the **Styler** field.
 
@@ -57,7 +61,7 @@ In a docufolio, open its settings and choose the desired collection profile in t
 
 ![img.jpg](docs/assets/docufolioInfo.png) -->
 
-## Programming widgets
+## Programming components
 
 You can edit the files in this repository with a local editor or with the online [GitHub code editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor). To edit files online, simply type <kbd>.</kbd> at any page of the repository on the GitHub website.
 
@@ -85,7 +89,7 @@ The most common setup is having a `master` branch and a `develop` branch and con
 
 ### Publishing new bundles
 
-Remote building is a good option to distribute production bundle of a single widget collection. However, local building is better for frequent development and/or repositories with multiple widget collections.
+Remote building is a good option to distribute production bundle of a single component collection. However, local building is better for frequent development and/or repositories with multiple component collections.
 
 > You can use local building for production, development or both. To disable remote building, go to your Cloudflare project and remove the build command from it.
 
@@ -115,19 +119,19 @@ For development environments, we recommend working with a public tunnel to your 
 
 Follow the instructions on working with a public tunnel to set up a tunnel and develop locally with it.
 
-## How to create a new Widget Collection
+## How to create a new Component Collection
 
-1. Create a folder under `src` with the name of the new **widget collection**. e.g. `src/MarketingClassic`.
+1. Create a folder under `src` with the name of the new **component collection**. e.g. `src/MarketingClassic`.
 
 2. Create a `index.js` file and export all necessary components that the website may need in that file. For example, [src/MarketingClassic/index.js](./src/MarketingClassic/index.js)
 
-3. If your widgets are built with Tailwind css, place the `tailwind.config.js` file under the root folder of the target remote. For example, [src/MarketingClassic/tailwind.config.js](./src/MarketingClassic/tailwind.config.js). Import the default Tailwind css file in `index.js`. For example, [src/MarketingClassic/index.css](./src/MarketingClassic/index.css)
+3. If your components are built with Tailwind css, place the `tailwind.config.js` file under the root folder of the target remote. For example, [src/MarketingClassic/tailwind.config.js](./src/MarketingClassic/tailwind.config.js). Import the default Tailwind css file in `index.js`. For example, [src/MarketingClassic/index.css](./src/MarketingClassic/index.css)
 
-## Choosing between Tailwind and Twind for widget CSS
+## Choosing between Tailwind and Twind for component CSS
 
 [Tailwind](https://tailwindcss.com/) is a CSS framework based on atomic utility classes. Tailwind classes are found and defined at build time and distributed as standard CSS. In contrast, [Twind](https://twind.dev/) is a tailwind-in-js CSS framework that defines the Tailwind utility classes at runtime when they are needed.
 
-Uniweb widgets support both approaches when building a widget collection for Uniweb-made websites. However, when building a system-level collection for the Uniweb application, the only valid option is Twind.
+Uniweb components support both approaches when building a component collection for Uniweb-made websites. However, when building a system-level collection for the Uniweb application, the only valid option is Twind.
 
 We recommend using Tailwind when creating a collection for a website and Twind when creating a collection for the Uniweb system.
 
