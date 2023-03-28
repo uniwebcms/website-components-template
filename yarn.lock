@@ -1779,9 +1779,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/module-builder@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@uniwebcms/module-builder@npm:1.0.0"
+"@uniwebcms/module-builder@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@uniwebcms/module-builder@npm:1.0.1"
   dependencies:
     "@tailwindcss/nesting": ^0.0.0-insiders.565cd3e
     autoprefixer: ^10.4.13
@@ -1802,17 +1802,17 @@ __metadata:
     postcss-loader: ^7.0.2
     style-loader: ^2.0.0
     webpack: ^5.74.0
-  checksum: b86b8fe9b2414e6964faefbd94704f79fa7f26ba771365a875295c92b1aa8d0e867400218c83d726e450d7b7b907f1d2ac5490a48343fb46ec49552cc66a6190
+  checksum: e68d7be1b6411dd843e1f782c34dce5a4607b635c0c2d2fb30aa3a4ae798408190e360d532dc557c105cd1dfcb41f65c1e3a0b7da1fb5fddd8aea51dd2dbde5c
   languageName: node
   linkType: hard
 
-"@uniwebcms/module-sdk@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@uniwebcms/module-sdk@npm:1.0.0"
+"@uniwebcms/module-sdk@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@uniwebcms/module-sdk@npm:1.0.1"
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: c5514b1d578124331f302dfa406494c7118b8c2c45857f94b025ea3aecac974137baccd275765f2fe14024200cbb666030469d15c9601f0daf8a367fe4c8f48a
+  checksum: fac7d71373367179bffc162e79115786ae3872d59531d1b6cae4dcfd175427f586620c5f3e6d129165fe3efe61cf2cdfb5c2a06d1a5908e035876cb8898c4000
   languageName: node
   linkType: hard
 
@@ -2336,7 +2336,7 @@ __metadata:
     "@babel/core": ^7.13.14
     "@babel/preset-env": ^7.13.12
     "@babel/preset-react": ^7.13.13
-    "@uniwebcms/module-builder": ^1.0.0
+    "@uniwebcms/module-builder": ^1.0.1
     babel-loader: ^8.2.2
     css-loader: ^5.2.0
     dotenv: ^10.0.0
@@ -3744,7 +3744,7 @@ __metadata:
   resolution: "main-collection@workspace:src/MainCollection"
   dependencies:
     "@headlessui/react": ^1.7.3
-    "@uniwebcms/module-sdk": ^1.0.0
+    "@uniwebcms/module-sdk": ^1.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-icons: ^4.6.0
