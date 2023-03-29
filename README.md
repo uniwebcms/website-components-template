@@ -1,4 +1,4 @@
-# Uniweb Website Component Template
+# Uniweb Website Components Template
 
 This repository is a template for creating **component collections** suitable to be used in websites made with [Uniweb CMS](https://uniwebcms.com). The [component development documentation](https://help.uniweb.app/) explains the programming framework, which is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack](https://webpack.js.org/).
 
@@ -117,7 +117,7 @@ For development environments, we recommend working with a public tunnel to your 
 
 > The latest version build of your code is available to the site via the public tunnel that you opened.
 
-Follow the instructions on working with a public tunnel to set up a tunnel and develop locally with it.
+Follow the [instructions on working with a public tunnel](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/localhost_tunnel.md) to set up a tunnel and develop locally with it.
 
 ## How to create a new Component Collection
 
