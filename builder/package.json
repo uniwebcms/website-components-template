@@ -19,7 +19,7 @@
         "@babel/core": "^7.13.14",
         "@babel/preset-env": "^7.13.12",
         "@babel/preset-react": "^7.13.13",
-        "@uniwebcms/module-builder": "^1.0.2",
+        "@uniwebcms/module-builder": "^1.0.3",
         "babel-loader": "^8.2.2",
         "css-loader": "^5.2.0",
         "dotenv": "^10.0.0",

@@ -1,4 +1,4 @@
-const { release, deploy } = require('uniweb-module-builder');
+const { release, deploy } = require('@uniwebcms/module-builder');
 const dotenv = require('dotenv');
 
 dotenv.config({ path: '../.env.dev' });
