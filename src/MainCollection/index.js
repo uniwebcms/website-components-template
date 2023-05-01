@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 const Navbar = React.lazy(() => import('./components/Navbar'));
 const Footer = React.lazy(() => import('./components/Footer'));

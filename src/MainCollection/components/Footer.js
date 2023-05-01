@@ -1,5 +1,4 @@
 import React from 'react';
-import { tw } from 'xtwind';
 import Wrapper from './Wrapper';
 import { SmartLink, DocumentImage, findLink } from '@uniwebcms/module-sdk';
 
@@ -16,18 +15,18 @@ export default (props) => {
     const { minHeight = '150px' } = properties;
 
     return (
-        <div className={tw`bg-blue-900`} style={{ minHeight }}>
-            <Wrapper className={tw`flex flex-col flex-col-reverse md:(flex-row) justify-between my-5 !px-8`}>
-                <div className={tw`w-full md:(w-auto mr-12) lg:mr-24 xl:mr-36 2xl:mr-48 mt-3 md:mt-0`}>
-                    <SmartLink to={makeLink(iconLink === '/' ? '' : iconLink)} className={tw`block -m-1.5 px-1.5 py-3 min-w-[100px]`}>
-                        <span className={tw`sr-only`}>Organization</span>
-                        <div className={tw`h-7 md:h-9`}>
-                            <DocumentImage contentId={documentId} value={banner?.value} className={tw`block object-cover h-full object-top`} alt={banner?.alt} activeLang={activeLang}></DocumentImage>
+        <div className='bg-blue-900' style={{ minHeight }}>
+            <Wrapper className='flex flex-col flex-col-reverse md:flex-row justify-between my-5 !px-8'>
+                <div className='w-full md:w-auto md:mr-12 lg:mr-24 xl:mr-36 2xl:mr-48 mt-3 md:mt-0'>
+                    <SmartLink to={makeLink(iconLink === '/' ? '' : iconLink)} className='block -m-1.5 px-1.5 py-3 min-w-[100px]'>
+                        <span className='sr-only'>Organization</span>
+                        <div className='h-7 md:h-9'>
+                            <DocumentImage contentId={documentId} value={banner?.value} className='block object-cover h-full object-top' alt={banner?.alt} activeLang={activeLang}></DocumentImage>
                         </div>
                     </SmartLink>
-                    <p className={tw`text-gray-300 text-sm`}>{header.title}</p>
+                    <p className='text-gray-300 text-sm'>{header.title}</p>
                 </div>
-                <div className={tw`flex-1 md:grid gap-4 lg:(grid-cols-2) xl:(grid-cols-3) 2xl:(grid-cols-4)`}>
+                <div className='flex-1 md:grid gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
                     {navLinks.map((navItem, index) => {
                         const { links, lists, paragraphs } = navItem;
 
@@ -36,7 +35,7 @@ export default (props) => {
                             const linkItem = links[0];
 
                             return (
-                                <SmartLink key={index} to={findLink(linkItem.href, documents, activeLang)} className={tw`text-base md:text-lg font-medium text-white hover:text-blue-500`}>
+                                <SmartLink key={index} to={findLink(linkItem.href, documents, activeLang)} className='text-base md:text-lg font-medium text-white hover:text-blue-500'>
                                     {linkItem.label}
                                 </SmartLink>
                             );
@@ -45,8 +44,8 @@ export default (props) => {
                             const linksList = lists[0];
 
                             return (
-                                <div className={tw`row-span-full`} key={index}>
-                                    <p className={tw`text-base md:text-lg font-medium text-gray-200 mb-1`}>{paragraphs[0]}</p>
+                                <div className='row-span-full' key={index}>
+                                    <p className='text-base md:text-lg font-medium text-gray-200 mb-1'>{paragraphs[0]}</p>
                                     {linksList.map((item, index) => {
                                         const { links } = item;
 
@@ -54,7 +53,7 @@ export default (props) => {
                                             const { href, label } = links[0];
 
                                             return (
-                                                <SmartLink key={index} to={findLink(href, documents, activeLang)} className={tw`my-0.5 block text-base md:text-lg font-medium text-[rgb(10,196,233)] hover:text-blue-500`}>
+                                                <SmartLink key={index} to={findLink(href, documents, activeLang)} className='my-0.5 block text-base md:text-lg font-medium text-[rgb(10,196,233)] hover:text-blue-500'>
                                                     {label}
                                                 </SmartLink>
                                             );

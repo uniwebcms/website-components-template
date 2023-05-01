@@ -1512,22 +1512,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:^1.1.0":
-  version: 1.2.0
-  resolution: "@emotion/is-prop-valid@npm:1.2.0"
-  dependencies:
-    "@emotion/memoize": ^0.8.0
-  checksum: cc7a19850a4c5b24f1514665289442c8c641709e6f7711067ad550e05df331da0692a16148e85eda6f47e31b3261b64d74c5e25194d053223be16231f969d633
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@emotion/memoize@npm:0.8.0"
-  checksum: c87bb110b829edd8e1c13b90a6bc37cebc39af29c7599a1e66a48e06f9bec43e8e53495ba86278cc52e7589549492c8dfdc81d19f4fdec0cee6ba13d2ad2c928
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1535,15 +1519,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/react@npm:^1.7.3":
-  version: 1.7.13
-  resolution: "@headlessui/react@npm:1.7.13"
+"@headlessui/react@npm:^1.7.13":
+  version: 1.7.14
+  resolution: "@headlessui/react@npm:1.7.14"
   dependencies:
     client-only: ^0.0.1
   peerDependencies:
     react: ^16 || ^17 || ^18
     react-dom: ^16 || ^17 || ^18
-  checksum: 132e5fce86978b9a6fd9d669fb556acec783debcd8f510c99226b3b3229dad50a13aeed69fc9af66465fc7029487ecfc46e6226f14218b760d5a309e08c0d059
+  checksum: 9122114d7a618877a8da2ada000422ce82e6af47195e414076fa5cf45687709479eb30b0df414eed52079be6e5904151bc92e4acfafbdde2592c608f015c490e
   languageName: node
   linkType: hard
 
@@ -1656,6 +1640,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/line-clamp@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "@tailwindcss/line-clamp@npm:0.4.4"
+  peerDependencies:
+    tailwindcss: ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+  checksum: 3d2ad992aa9263fe9b5cdb23bcfca521a6ab00f65e0f7167be35d2cb46b1635af72889ff9f6d5b2febf5aa5a36e3128eaad8ed43e43af4512c74c74f1058c4c0
+  languageName: node
+  linkType: hard
+
 "@tailwindcss/nesting@npm:^0.0.0-insiders.565cd3e":
   version: 0.0.0-insiders.565cd3e
   resolution: "@tailwindcss/nesting@npm:0.0.0-insiders.565cd3e"
@@ -1667,67 +1660,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.5.0":
-  version: 0.5.9
-  resolution: "@tailwindcss/typography@npm:0.5.9"
-  dependencies:
-    lodash.castarray: ^4.4.0
-    lodash.isplainobject: ^4.0.6
-    lodash.merge: ^4.6.2
-    postcss-selector-parser: 6.0.10
-  peerDependencies:
-    tailwindcss: "*"
-  checksum: b98e21bdd1798d7e4683499893c5c20ad43fcc8955d5d6eefbe1d30e98e9b6c28949ae8f276d39be9a66fafe843597717196bc5a0a2ac0f87ef86aa051ab9611
-  languageName: node
-  linkType: hard
-
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
-  languageName: node
-  linkType: hard
-
-"@twind/aspect-ratio@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@twind/aspect-ratio@npm:0.1.4"
-  peerDependencies:
-    twind: ">=0.14.4"
-    typescript: ^4.1.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: c3d806b863fdfb2fbd58c13204c1edcada7bb737fbda09b813d6f58cc5bab71c92186e7c95335d5a4217430222c57d01d6c0c61fdfbbc1fe2442a9eba5e1c8b5
-  languageName: node
-  linkType: hard
-
-"@twind/line-clamp@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "@twind/line-clamp@npm:0.1.1"
-  peerDependencies:
-    twind: ">=0.14.4"
-    typescript: ^4.1.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 9f81c1b44f4abf18af8e080d30307b545b8c6cbebb3bc2cc35a597c0c79a42af9dffdcf195875156062f7e280aba5f8ded59cfd0374d3af87c3c3bdb8e55e443
-  languageName: node
-  linkType: hard
-
-"@twind/react@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@twind/react@npm:0.0.4"
-  dependencies:
-    "@emotion/is-prop-valid": ^1.1.0
-    react-polymorphic-types: ^1.0.3
-  peerDependencies:
-    react: "*"
-    twind: ">=0.15.10"
-    typescript: ^4.1.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: e069e4e5fd45831b08ae3ec112f2b068eb7cf4e02a4e0548b223f5d2b71e9bc4a20899647bc0f23ef3f43789f94ac93701acdcb3e6138d93c3ae59b4c99db63b
   languageName: node
   linkType: hard
 
@@ -2675,13 +2611,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.5":
-  version: 3.1.1
-  resolution: "csstype@npm:3.1.1"
-  checksum: 1f7b4f5fdd955b7444b18ebdddf3f5c699159f13e9cf8ac9027ae4a60ae226aef9bbb14a6e12ca7dba3358b007cee6354b116e720262867c398de6c955ea451d
-  languageName: node
-  linkType: hard
-
 "debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.3":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
@@ -2751,44 +2680,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-serializer@npm:^1.0.1":
-  version: 1.4.1
-  resolution: "dom-serializer@npm:1.4.1"
-  dependencies:
-    domelementtype: ^2.0.1
-    domhandler: ^4.2.0
-    entities: ^2.0.0
-  checksum: fbb0b01f87a8a2d18e6e5a388ad0f7ec4a5c05c06d219377da1abc7bb0f674d804f4a8a94e3f71ff15f6cb7dcfc75704a54b261db672b9b3ab03da6b758b0b22
-  languageName: node
-  linkType: hard
-
-"domelementtype@npm:^2.0.1, domelementtype@npm:^2.2.0":
-  version: 2.3.0
-  resolution: "domelementtype@npm:2.3.0"
-  checksum: ee837a318ff702622f383409d1f5b25dd1024b692ef64d3096ff702e26339f8e345820f29a68bcdcea8cfee3531776b3382651232fbeae95612d6f0a75efb4f6
-  languageName: node
-  linkType: hard
-
-"domhandler@npm:^4.0.0, domhandler@npm:^4.2.0":
-  version: 4.3.1
-  resolution: "domhandler@npm:4.3.1"
-  dependencies:
-    domelementtype: ^2.2.0
-  checksum: 4c665ceed016e1911bf7d1dadc09dc888090b64dee7851cccd2fcf5442747ec39c647bb1cb8c8919f8bbdd0f0c625a6bafeeed4b2d656bbecdbae893f43ffaaa
-  languageName: node
-  linkType: hard
-
-"domutils@npm:^2.5.2":
-  version: 2.8.0
-  resolution: "domutils@npm:2.8.0"
-  dependencies:
-    dom-serializer: ^1.0.1
-    domelementtype: ^2.2.0
-    domhandler: ^4.2.0
-  checksum: abf7434315283e9aadc2a24bac0e00eab07ae4313b40cc239f89d84d7315ebdfd2fb1b5bf750a96bc1b4403d7237c7b2ebf60459be394d625ead4ca89b934391
-  languageName: node
-  linkType: hard
-
 "dotenv@npm:^10.0.0":
   version: 10.0.0
   resolution: "dotenv@npm:10.0.0"
@@ -2847,13 +2738,6 @@ __metadata:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
   checksum: bf3f787facaf4ce3439bef59d148646344e372bef5557f0d37ea8aa02c51f50a925cd1f07b8d338f18992c29f544ec235a8c64bcdb56030196c48832a5494174
-  languageName: node
-  linkType: hard
-
-"entities@npm:^2.0.0":
-  version: 2.2.0
-  resolution: "entities@npm:2.2.0"
-  checksum: 19010dacaf0912c895ea262b4f6128574f9ccf8d4b3b65c7e8334ad0079b3706376360e28d8843ff50a78aabcb8f08f0a32dbfacdc77e47ed77ca08b713669b3
   languageName: node
   linkType: hard
 
@@ -3265,18 +3149,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"htmlparser2@npm:^6.0.0":
-  version: 6.1.0
-  resolution: "htmlparser2@npm:6.1.0"
-  dependencies:
-    domelementtype: ^2.0.1
-    domhandler: ^4.0.0
-    domutils: ^2.5.2
-    entities: ^2.0.0
-  checksum: 81a7b3d9c3bb9acb568a02fc9b1b81ffbfa55eae7f1c41ae0bf840006d1dbf54cb3aa245b2553e2c94db674840a9f0fdad7027c9a9d01a062065314039058c4e
-  languageName: node
-  linkType: hard
-
 "http-cache-semantics@npm:^4.1.0":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -3668,31 +3540,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.castarray@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "lodash.castarray@npm:4.4.0"
-  checksum: fca8c7047e0ae2738b0b2503fb00157ae0ff6d8a1b716f87ed715b22560e09de438c75b65e01a7e44ceb41c5b31dce2eb576e46db04beb9c699c498e03cbd00f
-  languageName: node
-  linkType: hard
-
 "lodash.debounce@npm:^4.0.8":
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
   checksum: a3f527d22c548f43ae31c861ada88b2637eb48ac6aa3eb56e82d44917971b8aa96fbb37aa60efea674dc4ee8c42074f90f7b1f772e9db375435f6c83a19b3bc6
-  languageName: node
-  linkType: hard
-
-"lodash.isplainobject@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "lodash.isplainobject@npm:4.0.6"
-  checksum: 29c6351f281e0d9a1d58f1a4c8f4400924b4c79f18dfc4613624d7d54784df07efaff97c1ff2659f3e085ecf4fff493300adc4837553104cef2634110b0d5337
-  languageName: node
-  linkType: hard
-
-"lodash.merge@npm:^4.6.2":
-  version: 4.6.2
-  resolution: "lodash.merge@npm:4.6.2"
-  checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
   languageName: node
   linkType: hard
 
@@ -3743,12 +3594,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "main-collection@workspace:src/MainCollection"
   dependencies:
-    "@headlessui/react": ^1.7.3
+    "@headlessui/react": ^1.7.13
+    "@tailwindcss/line-clamp": ^0.4.4
     "@uniwebcms/module-sdk": ^1.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-icons: ^4.6.0
-    xtwind: "link:../_shared/xtwind"
+    tailwindcss: ^3.2.4
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -4699,16 +4551,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:6.0.10":
-  version: 6.0.10
-  resolution: "postcss-selector-parser@npm:6.0.10"
-  dependencies:
-    cssesc: ^3.0.0
-    util-deprecate: ^1.0.2
-  checksum: 46afaa60e3d1998bd7adf6caa374baf857cc58d3ff944e29459c9a9e4680a7fe41597bd5b755fc81d7c388357e9bf67c0251d047c640a09f148e13606b8a8608
-  languageName: node
-  linkType: hard
-
 "postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.11, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4, postcss-selector-parser@npm:^6.0.6, postcss-selector-parser@npm:^6.0.9":
   version: 6.0.11
   resolution: "postcss-selector-parser@npm:6.0.11"
@@ -4811,15 +4653,6 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: 4dbba7ad989c295b410e19b2a702722dae44368cb04b6515f9471353552f31ac80bd350f121d5bff79f81504b84039ede44d09e9f035f48bb1032e6eace126c4
-  languageName: node
-  linkType: hard
-
-"react-polymorphic-types@npm:^1.0.3":
-  version: 1.1.0
-  resolution: "react-polymorphic-types@npm:1.1.0"
-  peerDependencies:
-    "@types/react": ">=16.8.6"
-  checksum: ca47141f95c91f490c224049342ac2d2d7b4bbff8620c382580e34cb43fe875f05c1d43f567214c15ae587425a9cb5d1096a29a82f36e0311447680602460b2a
   languageName: node
   linkType: hard
 
@@ -5205,6 +5038,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"simple-collection@workspace:src/SimpleCollection":
+  version: 0.0.0-use.local
+  resolution: "simple-collection@workspace:src/SimpleCollection"
+  dependencies:
+    "@headlessui/react": ^1.7.13
+    "@tailwindcss/line-clamp": ^0.4.4
+    "@uniwebcms/module-sdk": ^1.0.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-icons: ^4.6.0
+    tailwindcss: ^3.2.4
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "smart-buffer@npm:^4.2.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -5304,13 +5154,6 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: 21425246a5a8f14d1625a657a3a56f8a323193fa341a71af818a2ed2a429efa2385a328b4381cf2f12c2d0e6380801eb9e0427ed9c3a10ff95c86e383184d632
-  languageName: node
-  linkType: hard
-
-"style-vendorizer@npm:^2.0.0":
-  version: 2.2.3
-  resolution: "style-vendorizer@npm:2.2.3"
-  checksum: b840d19aae468278d742f1de2925dd265611b73c35818fb315bfb96100f192e579e183c7aae26dc4d4d078c971a87d61b34cb3c123ff7ba41063cc5fdc0e9866
   languageName: node
   linkType: hard
 
@@ -5445,22 +5288,6 @@ __metadata:
   dependencies:
     is-number: ^7.0.0
   checksum: f76fa01b3d5be85db6a2a143e24df9f60dd047d151062d0ba3df62953f2f697b16fe5dad9b0ac6191c7efc7b1d9dcaa4b768174b7b29da89d4428e64bc0a20ed
-  languageName: node
-  linkType: hard
-
-"twind@npm:^0.16.17":
-  version: 0.16.19
-  resolution: "twind@npm:0.16.19"
-  dependencies:
-    csstype: ^3.0.5
-    htmlparser2: ^6.0.0
-    style-vendorizer: ^2.0.0
-  peerDependencies:
-    typescript: ^4.1.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: f61c9f30931e47b0b4eb1946c99a0ebca81b9fabf450cf965213b9923e2801d490b48bab53e436fc589a8828c793ed93b7d72df796f8a9e1a4cd096caa5ecf80
   languageName: node
   linkType: hard
 
@@ -5718,27 +5545,6 @@ __metadata:
   checksum: ac5dfa738b21f6e7f0dd6e65e1b3155036d68104e67e5d5d1bde74892e327d7e5636a076f625599dc394330a731861e87343ff184b0047fef1360a7ec0a5a36a
   languageName: node
   linkType: hard
-
-"xtwind@link:../_shared/xtwind::locator=main-collection%40workspace%3Asrc%2FMainCollection":
-  version: 0.0.0-use.local
-  resolution: "xtwind@link:../_shared/xtwind::locator=main-collection%40workspace%3Asrc%2FMainCollection"
-  languageName: node
-  linkType: soft
-
-"xtwind@workspace:src/_shared/xtwind":
-  version: 0.0.0-use.local
-  resolution: "xtwind@workspace:src/_shared/xtwind"
-  dependencies:
-    "@tailwindcss/typography": ^0.5.0
-    "@twind/aspect-ratio": ^0.1.4
-    "@twind/line-clamp": ^0.1.1
-    "@twind/react": ^0.0.4
-    react: ^18.2.0
-    twind: ^0.16.17
-  peerDependencies:
-    react: "*"
-  languageName: unknown
-  linkType: soft
 
 "yallist@npm:^3.0.2":
   version: 3.1.1
