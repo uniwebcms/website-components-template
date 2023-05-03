@@ -28,8 +28,16 @@ Every time you commit to your main branch, a production build will be executed a
 
 > Cloudflare lets you [skip a build](https://developers.cloudflare.com/pages/platform/branch-build-controls/#skip-builds) by adding `[CI Skip]` to the commit message.
 
-> **Alternative approach (not recommended)**: If you prefer building your distribution locally, simply leave the _Build command_ blank. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
+#### Node version via Environment Variables
 
+The default version of NodeJS used by Cloudflare is likely too old. To make sure that it's good enought for this project, follow [the Cloudflare instructions to set a NODE_VERSION environment variable](https://developers.cloudflare.com/pages/framework-guides/deploy-a-hexo-site/#using-a-specific-nodejs-version) with the desired NodeJS version. The `NODE_VERSION` should be set to **18.16**.
+
+#### Advanced local build (not recommended)
+
+There is an alternative approach for deployment (not recommended) in which one builds the project locally and simply uses Cloudflare for distribution. If you prefer building your distribution locally, simply leave the _Build command_ blank. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
+
+> **Note:** The recommended approach is to build the production bundle with Cloudflare by triggering the **remote builds** on each commit made the the `master or main` branch.
+ 
 ### Setup step 2: Link your component collection to a website
 
 A component collection can be linked to a website for production or development purposes. For development, you switch a website into **dev mode** and then provide a URL to a component collection for testing purposes. For production, you have to create a **component collection profile** with information about the collection. The specific steps for each case are described in the following subsections.
