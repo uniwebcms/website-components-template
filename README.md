@@ -34,9 +34,9 @@ The default version of NodeJS used by Cloudflare is likely too old. To make sure
 
 #### Advanced local build (not recommended)
 
-There is an alternative approach for deployment (not recommended) in which one builds the project locally and simply uses Cloudflare for distribution. If you prefer building your distribution locally, simply leave the _Build command_ blank. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
+There is an alternative approach for deployment in which one builds the project locally and simply uses Cloudflare for distribution. It is not the recommended approach, but if you prefer building your distribution locally, you can leave the _Build command_ blank in your Cloudflare project. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
 
-> **Note:** The recommended approach is to build the production bundle with Cloudflare by triggering the **remote builds** on each commit made the the `master or main` branch.
+> **Note:** The recommended approach is to build the production bundle with Cloudflare by triggering the **remote builds** on each commit made to the `master or main` branch.
  
 ### Setup step 2: Link your component collection to a website
 
