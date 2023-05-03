@@ -28,7 +28,7 @@ Every time you commit to your main branch, a production build will be executed a
 
 > Cloudflare lets you [skip a build](https://developers.cloudflare.com/pages/platform/branch-build-controls/#skip-builds) by adding `[CI Skip]` to the commit message.
 
-> Alternative (not recommended) approach: If you prefer building your distribution locally, simply leave the _Build command_ blank. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
+> **Alternative approach (not recommended)**: If you prefer building your distribution locally, simply leave the _Build command_ blank. Then you can commit your builds in the dist folder, or you can use [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) to push the files to Cloudflare without committing them to the repository.
 
 ### Setup step 2: Link your component collection to a website
 
