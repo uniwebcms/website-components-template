@@ -4,9 +4,7 @@ This repository is a template for creating **modules** suitable to be used in we
 
 The [module development documentation](https://help.uniweb.app/) explains the programming framework, which is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack](https://webpack.js.org/).
 
-:stopwatch: It should take about 5 minutes to get started building and testing a module using this repository. 
-
-<!-- You do not need to install any tools. All you need is a free [Cloudflare Pages](https://pages.cloudflare.com) project and edit access to a Uniweb website. It is also possible to build and test your component collections locally. -->
+:stopwatch: It should take about 5 minutes to get started building and testing a module using this repository.
 
 ## Getting started
 
