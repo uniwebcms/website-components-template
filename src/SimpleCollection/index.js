@@ -5,4 +5,4 @@ import * as expressModule from '@uniwebcms/express'; // See README for more deta
 // import CSS
 import './index.css';
 
-export default { Block, ...expressModule };
+export default { ...expressModule, Block };
