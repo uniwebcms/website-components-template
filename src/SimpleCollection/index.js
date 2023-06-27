@@ -1,6 +1,8 @@
-import React from 'react';
+// import local components
+import Block from './components/Block';
+// Import the express library
+import * as expressModule from '@uniwebcms/express'; // See README for more details: https://github.com/uniwebcms/express/blob/main/README.md
+// import CSS
 import './index.css';
 
-const Block = React.lazy(() => import('./components/Block'));
-
-export default { Block };
+export default { Block, ...expressModule };
