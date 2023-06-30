@@ -8,7 +8,7 @@ const port = process.env.DEV_SERVER_PORT;
 
 const serve = () => {
     const serveProcess = exec(
-        `yarn run http-server ../build_dev -p=${port} --cors`
+        `yarn run http-server ../build_dev -p=${port} --cors --no-cache`
     );
     serveProcess.stdout.on('data', function (data) {
         console.log(data);
