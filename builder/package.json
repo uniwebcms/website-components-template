@@ -11,7 +11,9 @@
         "build:prod": "webpack --mode=production",
         "build:prod-commit": "webpack --mode=production && run-func helper.js doRelease",
         "build:prod-copy": "webpack --mode=production && run-func helper.js doDeploy",
-        "build:prod-copy-commit": "webpack --mode=production && run-func helper.js doDeploy commit"
+        "build:prod-copy-commit": "webpack --mode=production && run-func helper.js doDeploy commit",
+        "serve": "node server.js",
+        "watch": "webpack --mode=development --watch --env tunnel"
     },
     "author": "",
     "license": "ISC",
@@ -19,10 +21,11 @@
         "@babel/core": "^7.13.14",
         "@babel/preset-env": "^7.13.12",
         "@babel/preset-react": "^7.13.13",
-        "@uniwebcms/module-builder": "^1.0.3",
+        "@uniwebcms/module-builder": "https://github.com/uniwebcms/uniweb-module-builder.git",
         "babel-loader": "^8.2.2",
         "css-loader": "^5.2.0",
         "dotenv": "^10.0.0",
+        "http-server": "^14.1.1",
         "postcss": "^8.4.20",
         "postcss-loader": "^7.0.2",
         "run-func": "^3.0.0",

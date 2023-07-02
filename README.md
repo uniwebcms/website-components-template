@@ -10,6 +10,39 @@ The [module development documentation](https://help.uniweb.app/) explains the pr
 
 Your first goal is to create your own repository and connect it live with a Uniweb website so that you can create and modify web components and see the results instantly.
 
-Begin by [configuring the development toolchain](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_toolchain.md). Next, build module files on your computer and make them publicly reachable [using a web server and a tunnel](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md).
+- [Configuring the development toolchain](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_toolchain.md).
+- [Run a web server and a public tunnel to localhost](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md)
 
-Once you are comfortable developing web components for website templates, the final step is to [release a production version](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) of a module and distribute it via Cloudflare.
+Make sure that all packages are up to date by running `yarn`.
+
+```bash
+yarn
+```
+
+Next, start a web server on localhost and a public tunnel to it with the following command:
+
+```bash
+yarn run serve --tunnel
+```
+
+> The default tunnel uses Cloudflare quick tunnel which provides a different URL every time the web server is started. It is also possible to configure a permanent tunnel URL in the environment variables. See [how to configure a named tunnel](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md).
+
+The final step is to build a bundle in development mode and watch the source files for changes.
+
+```bash
+yarn run watch:tunnel
+```
+
+## Module builder
+
+The pre-installed [Uniweb module builder](https://github.com/uniwebcms/uniweb-module-builder) package is the NPM version. To use the latest version from the GitHub repository, run the following at the root level of this repository.
+
+```bash
+yarn up @uniwebcms/module-builder@https://github.com/uniwebcms/uniweb-module-builder.git
+```
+
+To use the NPM version, simply run
+
+```bash
+yarn up @uniwebcms/module-builder
+```
