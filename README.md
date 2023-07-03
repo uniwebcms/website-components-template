@@ -36,7 +36,15 @@ The web server will serve the files located under the folder `build_dev`. Initia
 yarn watch
 ```
 
-A bundle of JavaScript files will be built in dev mode and saved to the subfolder `build_dev/[module-name]`. All source files under the `src` folder are watched for changes and the target bundles are rebuilt as necessary.
+A bundle of JavaScript files will be built in dev mode and saved to the subfolder `build_dev/[module-name]`. The default module name is `SimpleCollection`. All source files under the `src` folder are watched for changes and the target bundles are rebuilt as necessary.
+
+The output of the watch script gives you the URL that you need to copy and paste to connect a test website with your dev environment.
+
+```diff
++ Dev URL: https://[tunnel-sub-domain].trycloudflare.com/SimpleCollection
+```
+
+> Note: When connecting a website with a module, the URL must include the module name in its path because there might be several modules hosted under the same domain.
 
 **Step 4**: [Create a test website](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md#connecting-the-module-to-a-website) and set the Dev Mode URL to the URL produced in the last step. Continue developing the components in your module and testing them on the test website.
 
