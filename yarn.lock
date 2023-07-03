@@ -2498,6 +2498,7 @@ __metadata:
     "@babel/preset-react": ^7.13.13
     "@uniwebcms/module-builder": "https://github.com/uniwebcms/uniweb-module-builder.git"
     babel-loader: ^8.2.2
+    cloudflared: ^0.4.0
     css-loader: ^5.2.0
     dotenv: ^10.0.0
     http-server: ^14.1.1
@@ -2668,6 +2669,15 @@ __metadata:
     kind-of: ^6.0.2
     shallow-clone: ^3.0.0
   checksum: 770f912fe4e6f21873c8e8fbb1e99134db3b93da32df271d00589ea4a29dbe83a9808a322c93f3bcaf8584b8b4fa6fc269fc8032efbaa6728e0c9886c74467d2
+  languageName: node
+  linkType: hard
+
+"cloudflared@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "cloudflared@npm:0.4.0"
+  bin:
+    cloudflared: lib/cloudflared.js
+  checksum: 9b7b7ae3b6d67a33480190892b3b7f54308f97b278e4c0fb15fe76aa4a97ffbd6edc2ef1f592003fe85e86192ca9a50b04909260139e574b5a6e68ff26a4bd32
   languageName: node
   linkType: hard
 

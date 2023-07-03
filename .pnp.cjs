@@ -4084,6 +4084,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:8a1e8052a0a79842a09faf0801c0d053935f8c7d4f2e792eac0bd75b1d2972c14d731b7170ebebea35038688bffa665bf9c7aa392d96285b51f4a5d8bd2a4aeb#npm:7.18.6"],\
             ["@uniwebcms/module-builder", "virtual:8a1e8052a0a79842a09faf0801c0d053935f8c7d4f2e792eac0bd75b1d2972c14d731b7170ebebea35038688bffa665bf9c7aa392d96285b51f4a5d8bd2a4aeb#https://github.com/uniwebcms/uniweb-module-builder.git#commit=0697158de1a12ca03c31626f2550776655f6f9bb"],\
             ["babel-loader", "virtual:8a1e8052a0a79842a09faf0801c0d053935f8c7d4f2e792eac0bd75b1d2972c14d731b7170ebebea35038688bffa665bf9c7aa392d96285b51f4a5d8bd2a4aeb#npm:8.3.0"],\
+            ["cloudflared", "npm:0.4.0"],\
             ["css-loader", "virtual:8a1e8052a0a79842a09faf0801c0d053935f8c7d4f2e792eac0bd75b1d2972c14d731b7170ebebea35038688bffa665bf9c7aa392d96285b51f4a5d8bd2a4aeb#npm:5.2.7"],\
             ["dotenv", "npm:10.0.0"],\
             ["http-server", "npm:14.1.1"],\
@@ -4272,6 +4273,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-plain-object", "npm:2.0.4"],\
             ["kind-of", "npm:6.0.3"],\
             ["shallow-clone", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cloudflared", [\
+        ["npm:0.4.0", {\
+          "packageLocation": "./.yarn/unplugged/cloudflared-npm-0.4.0-66b36967cb/node_modules/cloudflared/",\
+          "packageDependencies": [\
+            ["cloudflared", "npm:0.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
