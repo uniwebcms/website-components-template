@@ -50,4 +50,4 @@ The output of the watch script gives you the URL that you need to copy and paste
 
 ![img.jpg](https://github.com/uniwebcms/uniweb-module-builder/raw/main/docs/assets/dev_mode.jpg)
 
-1. [Release a production version](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) when desired. Then configure websites and/or website templates to use the production URL of the module.
+**Step 5**: [Release a production version](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) when desired. Then configure websites and/or website templates to use the production URL of the module.
