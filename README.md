@@ -1,8 +1,8 @@
 # Uniweb Modules
 
-This repository is a template for creating **modules** suitable to be used in websites made with [Uniweb CMS](https://uniwebcms.com). A Uniweb module is a collection of web blocks and components. The source code of a module is placed in a subfolder under the `src` folder.
+This repository is a template for creating remote modules for websites made with [Uniweb CMS](https://uniwebcms.com). Each module is a collection of web components. The components that are exported to be used directly in a website are called blocks.
 
-The [Uniweb programming framework](https://help.uniweb.app/) is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack module federation](https://webpack.js.org/concepts/module-federation/).
+The [Uniweb programming framework](https://help.uniweb.app/) is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack module federation](https://webpack.js.org/concepts/module-federation/). A website is assigned a single remote module, which is made out of several web components. Different websites can use the same module. A repository can host multiple modules, and components in different modules can share common components across modules.
 
 ## Quick start
 
