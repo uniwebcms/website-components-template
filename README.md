@@ -24,7 +24,7 @@ yarn
 yarn serve --tunnel
 ```
 
-The web server will serve the files located under the folder `build_dev`. Initially, the folder will contain a single file named `quick-tunnel.txt` with the URL of the current [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) pointing to http://localhost:3005.
+The web server will serve the files located under the folder `build_dev`. Initially, the folder will contain a single file named `quick-tunnel.txt` with the URL of the current [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) pointing to http://localhost:3005. The quick tunnel URL changes everytime the server is started and has the form `https://[tunnel-sub-domain].trycloudflare.com`. It's also possible to skit the creation of a quick tunnel by not ussing the `--tunnel` and instead setting the URL of a permanent tunner in the variable `TUNNEL_URL` in a `.env.dev` file.
 
 > You should be able to see the contents of `build_dev` at http://localhost:3005 and also at the URL saved in `build_dev/quick-tunnel.txt`.
 
