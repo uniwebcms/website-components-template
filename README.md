@@ -2,13 +2,13 @@
 
 This repository is a template for creating remote modules for websites made with [Uniweb CMS](https://uniwebcms.com). Each module is a collection of web components. The components that are exported to be used directly in a website are called blocks.
 
-The [Uniweb programming framework](https://help.uniweb.app/) is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack module federation](https://webpack.js.org/concepts/module-federation/). A website is assigned a single remote module, which is made out of several web components. Different websites can use the same module. A repository can host multiple modules, and components in different modules can share common components across modules.
+The [Uniweb programming framework](https://help.uniweb.app/) is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack module federation](https://webpack.js.org/concepts/module-federation/). A website is assigned a single remote module, which is made out of several web components. Different websites can use the same module. A repository can host multiple modules. Components in different modules can share common components across modules.
 
 ## Quick start
 
 The goal is to create a repository and connect it with a test website so that you can create and modify web components and see the results instantly.
 
-If you already have Node.js, Yarn and a code editor such as VS Code installed, you are ready to start. Otherwise [configuring the development toolchain](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_toolchain.md) first.
+If you already have Node.js, Yarn and a code editor such as VS Code installed, you are ready to start. Otherwise [configure the development toolchain](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_toolchain.md) first.
 
 Next, you will need 2 terminal windows: one to run a web server, and another to build the project and watch for code changes.
 
