@@ -28,7 +28,7 @@ The web server will serve the files located under the folder `build_dev`. Initia
 
 > You should be able to see the contents of `build_dev` at http://localhost:3005 and also at the URL saved in `build_dev/quick-tunnel.txt`.
 
-**Note**: It's possible to skip the creation of the quick tunnel by not passing the `--tunnel` option when starting the server. Instead, set the URL of a permanent tunner (e.g. from [Pagekite](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/pagekite.md) in the variable `TUNNEL_URL` in a `.env.dev` file.
+**Note**: It's possible to skip the creation of the quick tunnel by not passing the `--tunnel` option when starting the server. Instead, set the URL of a permanent tunner (e.g. from [Pagekite](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/pagekite.md)) in the variable `TUNNEL_URL` in a `.env.dev` file.
 
 
 3. In another terminal, **build and watch** the currenttarget module. The name of the target module is set in the environment variable `TARGET_MODULE` in the `.env` file or in your own `.env.dev` file (not committed).
