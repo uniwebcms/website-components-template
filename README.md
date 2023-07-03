@@ -46,7 +46,7 @@ The output of the watch script gives you the URL that you need to copy and paste
 
 > Note: When connecting a website with a module, the URL must include the module name in its path because there might be several modules hosted under the same domain.
 
-**Step 4**: [Create a test website](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md#connecting-the-module-to-a-website), turn on its **Dev Mode**, and set the dev-mode **Website  Styler** to the URL produced in the last step (see the picture below). Continue developing the components in your module and testing them on the test website.
+**Step 4**: [Create a test website](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md#connecting-the-module-to-a-website), turn on its **Dev Mode**, and set the dev-mode **Website  Styler** to the URL produced in the last step (see the picture below). Continue developing the components in your module and reload the website to get the latest test bundle as it changes.
 
 ![img.jpg](https://github.com/uniwebcms/uniweb-module-builder/raw/main/docs/assets/dev_mode.jpg)
 
