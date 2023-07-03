@@ -6,11 +6,11 @@ The [Uniweb programming framework](https://help.uniweb.app/) is based on [React 
 
 ## Quick start
 
-The goal is to create a repository and connect it live with a test website so that you can create and modify web components and see the results instantly.
+The goal is to create a repository and connect it with a test website so that you can create and modify web components and see the results instantly.
 
 If you already have Node.js, Yarn and a code editor such as VS Code installed, you are ready to start. Otherwise [configuring the development toolchain](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_toolchain.md) first.
 
-Next, you will need 2 terminal windows, one to run a web server, and another one to build the project and watch for code changes.
+Next, you will need 2 terminal windows: one to run a web server, and another to build the project and watch for code changes.
 
 1. **Initialize** the project dependencies
 
