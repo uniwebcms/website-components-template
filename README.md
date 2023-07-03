@@ -51,3 +51,12 @@ The output of the watch script gives you the URL that you need to copy and paste
 ![img.jpg](https://github.com/uniwebcms/uniweb-module-builder/raw/main/docs/assets/dev_mode.jpg)
 
 **Step 5**: [Release a production version](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) when desired. Then configure websites and/or website templates to use the production URL of the module.
+
+## The Express Library
+
+The starer module included in this repository, named SimpleCollection, defines a single component named Block. In addition, the module impprts 
+[Uniweb Express library](https://github.com/uniwebcms/express) and exposes its general-purposed blocks. The module also imports the [Uniweb Module SDK](https://github.com/uniwebcms/uniweb-module-sdk), which is a software development kit that provides a thin wrapper around the underlying Uniweb JavaScript engine. 
+
+The SDK and the Express library complement one another. The SDK provides a tailored and consistent API layer for the underlying web engine, which makes it suitable to be used as a dependency of several different types of component libraries. On the other hand, Uniweb Express implements React-based components with the SDK with the goal of achieving a consistent UI look and providing commonly needed small and large components.
+
+A Uniweb Component is a React JS component whose props are 4 objects: `profile`, `block`, `page` , and `website`. The `profile` object represents the source data of a website. The `block` object contains the settings for the component, which is considered a **building block** within a webpage. The `page` object provides information about the current webpage being rendered as a sequence of buildign blocks. Finally, the `website` provides information about the entire website. Most components only need to work with the `profile` and `block` props. [Learn more about Uniweb components](https://github.com/uniwebcms/uniweb-module-sdk/blob/main/docs/components.md)
