@@ -30,7 +30,7 @@ The web server will serve the files located under the folder `build_dev`. Initia
 
 > You should be able to see the contents of `build_dev` at http://localhost:3005 and also at the URL saved in `build_dev/quick-tunnel.txt`.
 
-**Step 3**: In another terminal, **build and watch** the currenttarget module. The name of the target module is set in the environment variable `TARGET_MODULE` in the `.env` file or in your own `.env.dev` file (not committed).
+**Step 3**: In another terminal, **build and watch** the current **target module**. The name of the target module is set in the environment variable `TARGET_MODULE` in the `.env` file or in your own `.env.dev` file (not committed).
 
 ``` bash
 yarn watch
