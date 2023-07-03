@@ -34,7 +34,7 @@ The web server will serve the files located under the folder `build_dev`. Initia
 yarn watch
 ```
 
-A bundle of JavaScript files will be built in dev mode and saved to the subfolder `build_dev/[module-name]` folder. The source files under the `src` folder will be watched for changes and the bundle will be rebuilt as necessary.
+A bundle of JavaScript files will be built in dev mode and saved to the subfolder `build_dev/[module-name]`. All source files under the `src` folder are watched for changes and the target bundles are rebuilt as necessary.
 
 4. [Create a test website](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_with_tunnel.md#connecting-the-module-to-a-website) and set the Dev Mode URL to the URL produced in the last step. Continue developing the components in your module and testing them on the test website.
 
