@@ -1,10 +1,16 @@
 # Uniweb Modules
 
-This repository is a template for creating remote modules for websites made with [Uniweb CMS](https://uniwebcms.com). Each module is a collection of web components. The components that are exported to be used directly in a website are called blocks.
+This repository is a template for creating remote modules for websites made with [Uniweb CMS](https://uniwebcms.com). Each module is a collection of web components. Create a new repository from this [GitHub template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) as shown in the image below.
+
+<img src="https://docs.github.com/assets/cb-77734/mw-1440/images/help/repository/use-this-template-button.webp" width="300">
 
 The [Uniweb programming framework](https://help.uniweb.app/) is based on [React JS](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [Webpack module federation](https://webpack.js.org/concepts/module-federation/). A website is assigned a single remote module, which is made out of several web components. Different websites can use the same module. A repository can host multiple modules. Components in different modules can share common components across modules.
 
-## Quick start
+## Quick start for production
+
+The simplest build-and-deploy approach is to [use the included GitHub workflow](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/build_and_deploy_with_gh_actions.md), which uses GitHub Pages for hosting the distribution files. Another good option is to [use Cloudflare Pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md); it's free but you must create an account first.
+
+## Quick start for development
 
 The goal is to create a repository and connect it with a test website so that you can create and modify web components and see the results instantly.
 
@@ -50,7 +56,9 @@ The output of the watch script gives you the URL that you need to copy and paste
 
 ![img.jpg](https://github.com/uniwebcms/uniweb-module-builder/raw/main/docs/assets/dev_mode.jpg)
 
-**Step 5**: [Release a production version](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) when desired. Then configure websites and/or website templates to use the production URL of the module.
+**Step 5**: Release a production version with either [GitHub pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/build_and_deploy_with_gh_actions.md) (simplest option) or [Cloudflare pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) (it's free but you must create an account first).
+
+**Step 6**: Configure websites and/or website templates to use the production URL of the module.
 
 ## The Express Library
 
