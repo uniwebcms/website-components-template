@@ -56,7 +56,7 @@ The output of the watch script gives you the URL that you need to copy and paste
 
 ![img.jpg](https://github.com/uniwebcms/uniweb-module-builder/raw/main/docs/assets/dev_mode.jpg)
 
-**Step 5**: Release a production version with either [GitHub pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/build_and_deploy_with_gh_actions.md) (simplest option) or [Cloudflare pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) (it's free but you must create an account first).
+**Step 5**: Release a production version with either [GitHub Pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/build_and_deploy_with_gh_actions.md) (simplest option) or [Cloudflare Pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) (it's free but you must create an account first).
 
 **Step 6**: Configure websites and/or website templates to use the production URL of the module.
 
