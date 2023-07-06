@@ -34,7 +34,7 @@ yarn serve --tunnel
 
 The web server will serve the files located under the folder `build_dev`. Initially, the folder will contain a single file named `quick-tunnel.txt` with the URL of the current [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) pointing to http://localhost:3005. The quick tunnel URL changes everytime the server is started and has the form `https://[tunnel-sub-domain].trycloudflare.com`. 
 
-**Note**: The `--tunnel` (or `-t`) option requests the creation of a quick tunnel. It's possible to skip the creation of the quick tunnel by not passing the `--tunnel` option when starting the server. Instead, set the URL of a permanent tunner (e.g. from [Pagekite](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/pagekite.md)) in the variable `TUNNEL_URL` in a `.env.dev` file.
+**Note**: The `--tunnel` (or `-t`) option requests the creation of a quick tunnel. It's also possible to use a permanent tunnel. For example, [Pagekite](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/pagekite.md) can be used to created a named tunnel (Cloudflare also offers a [similar solution](https://developers.cloudflare.com/pages/how-to/preview-with-cloudflare-tunnel/)). If using a permanent tunnel, do not set the `--tunnel` option when starting the server. Instead, set the URL of a permanent tunnel in the variable `TUNNEL_URL` in a `.env.dev` file.
 
 > You should be able to see the contents of `build_dev` at http://localhost:3005 and also at the URL saved in `build_dev/quick-tunnel.txt`.
 
