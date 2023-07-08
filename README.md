@@ -62,15 +62,10 @@ The output of the watch script gives you the URL that you need to copy and paste
 
 **Step 6**: Configure websites and/or website templates to use the production URL of the module.
 
-## How to create a standard website module
+## Next steps
 
-The [Docufolio](https://uniwebcms.com/apps/docufolio) app in [Uniweb](https://uniwebcms.com) is a **content and template editor** for websites and reports.
+- [Content and template editing with  Docufolio ](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md)
 
-## The Express Library
+- [Standard web components](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md#standard-web-components)
 
-The **SimpleCollection** module included in this repository defines a single component named **Block**. In addition, the module imports the
-[Uniweb Express library](https://github.com/uniwebcms/express) and re-exports the blocks exported by it. The module also includes the [Uniweb Module SDK](https://github.com/uniwebcms/uniweb-module-sdk) package, which is a thin wrapper for the underlying Uniweb JavaScript engine. 
-
-The SDK package and the Express library complement one another. The SDK provides a tailored and consistent API layer for the underlying web engine with the goal of making it useful as a dependency of different types of component libraries. On the other hand, Uniweb Express implements React-based components with the SDK with the goal of achieving a consistent UI look and providing commonly needed small and large components.
-
-A Uniweb Component is a React JS component whose props are 4 objects: `profile`, `block`, `page` , and `website`. The `profile` object represents the source data of a website. The `block` object contains the settings for the component, which is considered a **building block** within a webpage. The `page` object provides information about the current webpage being rendered as a sequence of buildign blocks. Finally, the `website` provides information about the entire website. Most components only need to work with the `profile` and `block` props. [Learn more about Uniweb components](https://github.com/uniwebcms/uniweb-module-sdk/blob/main/docs/components.md)
+- [How to create a compliant website module](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md#how-to-create-a-compliant-website-module)
