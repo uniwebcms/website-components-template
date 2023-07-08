@@ -10,7 +10,7 @@ The [Uniweb programming framework](https://help.uniweb.app/) is based on [React 
 
 The simplest build-and-deploy approach is to [use the included GitHub workflow](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/build_and_deploy_with_gh_actions.md), which uses GitHub Pages for hosting the distribution files. Another good option is to [use Cloudflare Pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md); it's free but you must create an account first.
 
-⏱️It only takes a minute to configure the build and deploy tasks. Once configured, new commits to the `main` branch will perform new deployments automatically. For development, it is recommended to work on a `develop` branch and only merge it into `main` when the code is ready to be released.
+⏱️It only takes a minute to configure the build and deploy tasks. Once configured, new commits to the `main` branch will perform new deployments automatically. For development, it is recommended to [create a branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) named `develop` and make all your commits to it. When ready to release a production version of your modules, [merge](https://nira.com/how-to-merge-branches-in-github/) the `develop` branch into `main` branch so that the build-and-deploy workflow is triggered from the `main` branch.
 
 ## Quick start for development
 
@@ -61,6 +61,10 @@ The output of the watch script gives you the URL that you need to copy and paste
 **Step 5**: Release a production version with either [GitHub Pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/build_and_deploy_with_gh_actions.md) (simplest option) or [Cloudflare Pages](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/prod_distribution.md) (it's free but you must create an account first). Once configured, commits to the `main` branch will perform new deployments automatically. To avoid deploying a development version of a module, it is recommended to create a `develop` branch and perfom all coding on that branch. When the code is ready, you can merge the `develop` branch into the `main` branch, which will then trigger the build and deploy tasks. 
 
 **Step 6**: Configure websites and/or website templates to use the production URL of the module.
+
+## How to create a standard website module
+
+The [Docufolio](https://uniwebcms.com/apps/docufolio) app in [Uniweb](https://uniwebcms.com) is a **content and template editor** for websites and reports.
 
 ## The Express Library
 
