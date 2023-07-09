@@ -62,10 +62,6 @@ The output of the watch script gives you the URL that you need to copy and paste
 
 **Step 6**: Configure websites and/or website templates to use the production URL of the module.
 
-## Next steps
+## Next step
 
-- [Content and template editing with  Docufolio ](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md)
-
-- [Standard web components](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md#standard-web-components)
-
-- [How to create a compliant website module](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md#how-to-create-a-compliant-website-module)
+- [Content and template editing with Docufolio](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md)
