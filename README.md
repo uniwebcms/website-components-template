@@ -65,4 +65,5 @@ The output of the watch script gives you the URL that you need to copy and paste
 ## Next steps
 
 - [Content and template editing with Docufolio](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/docufolio.md)
-- [Customizing the default theme for websites and templates](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/webthemes.md)
+- [Web theme for websites and templates](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/webthemes.md)
+- [Examples of web components](https://github.com/uniwebcms/express/tree/main/src/blocks)
