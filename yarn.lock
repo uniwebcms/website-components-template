@@ -1859,9 +1859,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/module-builder@https://github.com/uniwebcms/uniweb-module-builder.git":
-  version: 1.0.4
-  resolution: "@uniwebcms/module-builder@https://github.com/uniwebcms/uniweb-module-builder.git#commit=0697158de1a12ca03c31626f2550776655f6f9bb"
+"@uniwebcms/module-builder@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@uniwebcms/module-builder@npm:1.2.3"
   dependencies:
     "@tailwindcss/nesting": ^0.0.0-insiders.565cd3e
     autoprefixer: ^10.4.13
@@ -1885,7 +1885,7 @@ __metadata:
     postcss-loader: ^7.0.2
     style-loader: ^2.0.0
     webpack: ^5.74.0
-  checksum: 704df30d1622e2a441b04539f65e8ecfeb8608e74e4ef6b6825e94d399dcc26e44977b85067ae152b66ce7a385ff209af18007c0958682a23390237ae69ba3d1
+  checksum: 9223f49364861052aeb17cb8e7e64645328d538f058933becc7b00e531d915dd424cffb34f2b290b45b9bcc50c1a5a935b79c72ea489788cb927365ee4d66424
   languageName: node
   linkType: hard
 
@@ -2496,7 +2496,7 @@ __metadata:
     "@babel/core": ^7.13.14
     "@babel/preset-env": ^7.13.12
     "@babel/preset-react": ^7.13.13
-    "@uniwebcms/module-builder": "https://github.com/uniwebcms/uniweb-module-builder.git"
+    "@uniwebcms/module-builder": ^1.2.3
     babel-loader: ^8.2.2
     cloudflared: ^0.4.0
     css-loader: ^5.2.0
