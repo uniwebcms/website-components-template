@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy Module
 
 on:
     # Runs on pushes targeting the default branch
