@@ -1,12 +1,10 @@
-name: Build and Deploy Tutorial
+name: Build and Deploy Module
 
 on:
+    # Runs on pushes targeting the default branch
     push:
         branches:
             - main
-        paths:
-            - 'tutorial/**'
-            - '.env'
 
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
@@ -24,26 +22,32 @@ concurrency:
     cancel-in-progress: false
 
 jobs:
-    build_deploy:
-        name: Build and Deploy
+    build:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
         runs-on: ubuntu-latest
-        # defaults:
-        #     run:
-        #         shell: bash
-        #         working-directory: tutorial
 
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: 18
-                  cache: yarn
-                  # cache-dependency-path: tutorial/yarn.lock
+            - name: Checkout Repository
+              uses: actions/checkout@v3
+
+            - name: Get GitHub Pages URL
+              run: |
+                  owner_name=${GITHUB_REPOSITORY_OWNER}
+                  repository_name=${GITHUB_REPOSITORY#*/}
+                  public_url=https://${owner_name}.github.io/${repository_name}
+                  echo "GH_PAGES_URL : $public_url"
+                  echo "GH_PAGES_URL=${public_url}" >> $GITHUB_ENV
 
             - name: Install dependencies
-              run: yarn install --frozen-lockfile
+              run: yarn
 
-            - name: Build website
+            - name: Build module
+              run: yarn build --env GH_PAGES_URL=${{ env.GH_PAGES_URL }}
+
+            - name: Build tutorial
               run: yarn build:tutorial
 
             - name: Setup Pages
@@ -52,8 +56,8 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
-                  # Upload the dist tutorial folder only
-                  path: './dist/tutorial'
+                  # Upload the dist TARGET_MODULE folder only
+                  path: './dist/${{ steps.dotenv.outputs.TARGET_MODULE }}'
 
             - name: Deploy to GitHub Pages
               id: deployment
