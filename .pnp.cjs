@@ -6473,6 +6473,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ansi-escapes", [\
+        ["npm:4.3.2", {\
+          "packageLocation": "./.yarn/cache/ansi-escapes-npm-4.3.2-3ad173702f-93111c4218.zip/node_modules/ansi-escapes/",\
+          "packageDependencies": [\
+            ["ansi-escapes", "npm:4.3.2"],\
+            ["type-fest", "npm:0.21.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ansi-html-community", [\
         ["npm:0.0.8", {\
           "packageLocation": "./.yarn/cache/ansi-html-community-npm-0.0.8-5eaef55f1b-04c568e834.zip/node_modules/ansi-html-community/",\
@@ -16480,6 +16490,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["supports-hyperlinks", [\
+        ["npm:2.3.0", {\
+          "packageLocation": "./.yarn/cache/supports-hyperlinks-npm-2.3.0-d19176eba2-9ee0de3c8c.zip/node_modules/supports-hyperlinks/",\
+          "packageDependencies": [\
+            ["supports-hyperlinks", "npm:2.3.0"],\
+            ["has-flag", "npm:4.0.0"],\
+            ["supports-color", "npm:7.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["supports-preserve-symlinks-flag", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-53b1e247e6.zip/node_modules/supports-preserve-symlinks-flag/",\
@@ -16590,6 +16611,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minizlib", "npm:2.1.2"],\
             ["mkdirp", "npm:1.0.4"],\
             ["yallist", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["terminal-link", [\
+        ["npm:2.1.1", {\
+          "packageLocation": "./.yarn/cache/terminal-link-npm-2.1.1-de80341758-ce3d2cd3a4.zip/node_modules/terminal-link/",\
+          "packageDependencies": [\
+            ["terminal-link", "npm:2.1.1"],\
+            ["ansi-escapes", "npm:4.3.2"],\
+            ["supports-hyperlinks", "npm:2.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16841,13 +16873,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/module-type-aliases", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.4.1"],\
             ["@docusaurus/preset-classic", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.4.1"],\
             ["@mdx-js/react", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:1.6.22"],\
+            ["chalk", "npm:4.1.2"],\
             ["dotenv", "npm:10.0.0"],\
             ["photoswipe", "npm:5.3.8"],\
             ["prism-react-renderer", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:1.3.5"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:824c58c4ca55fef1a076a1e64b7aec198a1ece2c5def509c3d1d297365e28d0ced92769a9e6ef28770f6904227157ce4b4bf37f4004599fd784716c78f724d03#npm:18.2.0"],\
-            ["react-photoswipe-gallery", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.2.7"]\
+            ["react-photoswipe-gallery", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.2.7"],\
+            ["terminal-link", "npm:2.1.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -16857,6 +16891,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.20.2-b36432617f-4fb3272df2.zip/node_modules/type-fest/",\
           "packageDependencies": [\
             ["type-fest", "npm:0.20.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.21.3", {\
+          "packageLocation": "./.yarn/cache/type-fest-npm-0.21.3-5ff2a9c6fd-e6b32a3b38.zip/node_modules/type-fest/",\
+          "packageDependencies": [\
+            ["type-fest", "npm:0.21.3"]\
           ],\
           "linkType": "HARD"\
         }],\
