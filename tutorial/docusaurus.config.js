@@ -18,7 +18,7 @@ const repoName = repo.replace(repo_owner, '').replace(/^\/|\/$/g, '');
         title: 'Website Components',
         tagline: 'Tutorial of Website Components',
         url: url,
-        baseUrl: `/${repoName}/`,
+        baseUrl: `/${repoName}/tutorial/`,
         onBrokenLinks: 'warn',
         onBrokenMarkdownLinks: 'warn',
         favicon: 'img/favicon.png',
