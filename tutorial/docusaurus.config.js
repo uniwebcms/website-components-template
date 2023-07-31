@@ -5,14 +5,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // dotenv.config({ path: '../.env.local' });
 dotenv.config({ path: '../.env' });
 
+const repo_owner = process.env.GITHUB_REPOSITORY_OWNER;
+const repo = process.env.GITHUB_REPOSITORY;
+
+const url = `https://${repo_owner}.github.io`;
+const repoName = repo.replace(repo_owner, '').replace(/^\/|\/$/g, '');
+
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (
     module.exports = {
         title: 'Website Components',
         tagline: 'Tutorial of Website Components',
-        url: 'http://localhost:3000',
-        baseUrl: process.env.BASE_URL,
+        url: url,
+        baseUrl: `/${repoName}/`,
         onBrokenLinks: 'warn',
         onBrokenMarkdownLinks: 'warn',
         favicon: 'img/favicon.png',
