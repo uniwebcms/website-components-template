@@ -22,7 +22,7 @@ const Table = ({ schema }) => {
                 {notOption ? (
                     <tr>
                         <td
-                            colspan='4'
+                            colSpan='4'
                             style={{
                                 textAlign: 'center',
                                 background: '#f3f4f6',
@@ -109,10 +109,7 @@ export default function JSViewer(props) {
                                 <div
                                     key={title}
                                     style={{
-                                        background:
-                                            title === current
-                                                ? 'rgb(84, 199, 236)'
-                                                : 'rgb(243 244 246)',
+                                        background: title === current ? 'rgb(84, 199, 236)' : 'rgb(243 244 246)',
                                         color: title === current ? 'white' : 'rgb(75 85 99)',
                                         width: 'fit-content',
                                         padding: '2px 12px',

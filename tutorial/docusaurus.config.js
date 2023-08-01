@@ -7,30 +7,49 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // dotenv.config({ path: '../.env.local' });  // Enable this line to merge multiple env files
 dotenv.config({ path: '../.env' });
 
-const mode = process.env.mode;
-const repo_owner = process.env.GITHUB_REPOSITORY_OWNER || '';
-const repo = process.env.GITHUB_REPOSITORY || '';
+let url, baseUrl;
 
-if (mode === 'production' && (!repo_owner || !repo)) {
-    let message =
-        chalk.yellow.bold('Warning! ') +
-        chalk.white(
-            'Critical environment variables are missing. This could potentially occur when building in production mode locally or outside of the GitHub Pages Workflow environment. The build can still be processed, but the tutorial page may fail to load.\n\n'
-        );
+const { npm_lifecycle_event, TUTORIAL_SITE_URL, TUTORIAL_SITE_BASE_URL, GITHUB_REPOSITORY_OWNER, GITHUB_REPOSITORY } = process.env;
 
-    message += chalk.white('The configuration will utilize the following environment variables: ') + chalk.magenta.bold('GITHUB_REPOSITORY_OWNER') + chalk.white(' and ') + chalk.magenta.bold('GITHUB_REPOSITORY');
+switch (npm_lifecycle_event) {
+    case 'start':
+    case 'build:dev':
+    case 'serve:dev':
+        url = 'http://localhost';
+        baseUrl = '/';
+        break;
+    case 'build:prod':
+    case 'serve:prod':
+        if (TUTORIAL_SITE_URL && TUTORIAL_SITE_BASE_URL) {
+            url = TUTORIAL_SITE_URL;
+            baseUrl = TUTORIAL_SITE_BASE_URL;
+        } else {
+            let message =
+                chalk.yellow.bold('Warning! ') +
+                chalk.white('Critical environment variables are missing. This could potentially occur when building in production mode locally without setting the value of: ') +
+                chalk.magenta.bold('TUTORIAL_SITE_URL') +
+                chalk.white(' and ') +
+                chalk.magenta.bold('TUTORIAL_SITE_BASE_URL') +
+                chalk.white('.');
 
-    message +=
-        chalk.green.bold('\n\n\nHint! ') +
-        chalk.white('In case your are using other CI/CD tool rather than GitHub Pages, change the value of ' + chalk.cyan.bold('url') + chalk.white(' and ') + chalk.cyan.bold('baseUrl')) +
-        chalk.white(' in the configuration.');
+            message += chalk.blue.bold('\n\nHint! ') + chalk.white('Double check the value in .env\n');
+            console.log(message);
 
-    message += chalk.white('\n\nFor more information, please read: ') + terminalLink(chalk.blue.bold('Docusaurus'), 'https://docusaurus.io/docs/api/docusaurus-config');
-    console.log(message);
+            throw new Error("Error occurs when build or serve under development mode: 'build:prod' | 'serve:prod'");
+        }
+    case 'build:GH':
+        if ((GITHUB_REPOSITORY_OWNER, GITHUB_REPOSITORY)) {
+            url = GITHUB_REPOSITORY_OWNER;
+            baseUrl = GITHUB_REPOSITORY;
+        } else {
+            let message = chalk.yellow.bold('Warning! ') + chalk.white('Critical environment variables are missing. This could potentially occur when building in production mode outside of the GitHub Pages Workflow environment.');
+            message += chalk.blue.bold('\n\nHint! ') + chalk.white('If you want to build locally in production mode, try ') + chalk.cyan.bold('build:prod') + chalk.white('.\n');
+
+            console.log(message);
+
+            throw new Error("Error occurs when build under development mode: 'build:GH'");
+        }
 }
-
-const url = `https://${repo_owner}.github.io`;
-const repoName = repo.replace(repo_owner, '').replace(/^\/|\/$/g, '');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -38,8 +57,8 @@ const repoName = repo.replace(repo_owner, '').replace(/^\/|\/$/g, '');
     module.exports = {
         title: 'Website Components',
         tagline: 'Tutorial of Website Components',
-        url: mode === 'production' ? url : 'https://example.com',
-        baseUrl: mode === 'production' ? `/${repoName}/tutorial/` : '/',
+        url,
+        baseUrl,
         onBrokenLinks: 'warn',
         onBrokenMarkdownLinks: 'warn',
         favicon: 'img/favicon.png',
