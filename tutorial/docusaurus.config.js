@@ -42,7 +42,7 @@ switch (npm_lifecycle_event) {
             url = GITHUB_REPOSITORY_OWNER;
             baseUrl = GITHUB_REPOSITORY;
         } else {
-            let message = chalk.yellow.bold('Warning! ') + chalk.white('Critical environment variables are missing. This could potentially occur when building in production mode outside of the GitHub Pages Workflow environment.');
+            let message = chalk.yellow.bold('Warning! ') + chalk.white('Critical environment variables are missing. This could potentially occur when building in production mode outside of the GitHub Actions Workflow environment.');
             message += chalk.blue.bold('\n\nHint! ') + chalk.white('If you want to build locally in production mode, try ') + chalk.cyan.bold('build:prod') + chalk.white('.\n');
 
             console.log(message);

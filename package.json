@@ -20,7 +20,8 @@
         "serve": "cd builder && yarn run serve",
         "watch": "cd builder && yarn run watch:tunnel",
         "build:tutorial": "cd tutorial && yarn build:prod",
-        "serve:tutorial": "cd tutorial && yarn serve:prod"
+        "serve:tutorial": "cd tutorial && yarn serve:prod",
+        "build:tutorial:GH": "cd tutorial && yarn build:GH"
     },
     "dependencies": {
         "react": "^17.0.2",
