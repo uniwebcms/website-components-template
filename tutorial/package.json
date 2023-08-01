@@ -11,7 +11,7 @@
         "clear": "rm -rf static/img/dimensions.json && docusaurus clear",
         "build:prod": "yarn prebuild && docusaurus build --out-dir ../dist/tutorial",
         "serve:prod": "docusaurus serve --dir ../dist/tutorial --port 3000",
-        "build:GH": "yarn prebuild && docusaurus build --out-dir ../dist/tutorial"
+        "build:gh": "yarn prebuild && docusaurus build --out-dir ../dist/tutorial"
     },
     "peerDependencies": {
         "react": "*",

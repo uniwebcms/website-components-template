@@ -19,9 +19,11 @@
         "watch": "cd builder && yarn run watch:tunnel",
         "build:tutorial": "cd tutorial && yarn build:prod",
         "serve:tutorial": "cd tutorial && yarn serve:prod",
-        "build:tutorial:GH": "cd tutorial && yarn build:GH"
+        "build:tutorial:gh": "cd tutorial && yarn build:gh",
+        "deploy:gh-pages": "gh-pages -d dist"
     },
     "dependencies": {
+        "gh-pages": "^5.0.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
     }

@@ -37,7 +37,7 @@ switch (npm_lifecycle_event) {
 
             throw new Error("Error occurs when build or serve under development mode: 'build:prod' | 'serve:prod'");
         }
-    case 'build:GH':
+    case 'build:gh':
         if ((GITHUB_REPOSITORY_OWNER, GITHUB_REPOSITORY)) {
             url = `https://${GITHUB_REPOSITORY_OWNER}.github.io`;
 
@@ -50,7 +50,7 @@ switch (npm_lifecycle_event) {
 
             console.log(message);
 
-            throw new Error("Error occurs when build under development mode: 'build:GH'");
+            throw new Error("Error occurs when build under development mode: 'build:gh'");
         }
 }
 
