@@ -18,7 +18,6 @@ switch (npm_lifecycle_event) {
         baseUrl = '/';
         break;
     case 'build:prod':
-    case 'serve:prod':
         if (TUTORIAL_SITE_URL && TUTORIAL_SITE_BASE_URL) {
             url = TUTORIAL_SITE_URL;
             baseUrl = `${TUTORIAL_SITE_BASE_URL}tutorial/`;
@@ -35,7 +34,7 @@ switch (npm_lifecycle_event) {
             message += chalk.blue.bold('\n\nHint! ') + chalk.white('Double check the value in .env\n');
             console.log(message);
 
-            throw new Error("Error occurs when build or serve under development mode: 'build:prod' | 'serve:prod'");
+            throw new Error("Error occurs when build under production mode: 'build:prod'");
         }
     case 'build:gh':
         if ((GITHUB_REPOSITORY_OWNER, GITHUB_REPOSITORY)) {
@@ -80,7 +79,7 @@ switch (npm_lifecycle_event) {
             /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
             ({
                 navbar: {
-                    title: 'Docs',
+                    title: 'Introduction',
                     logo: {
                         alt: 'UNIWEB Logo',
                         src: 'img/uniweb_black.svg',
@@ -91,9 +90,9 @@ switch (npm_lifecycle_event) {
                     items: [
                         {
                             type: 'doc',
-                            docId: 'SimpleCollection/block',
+                            docId: 'sample-doc',
                             position: 'left',
-                            label: 'Components'
+                            label: 'Docs'
                         }
                     ]
                 },
@@ -112,10 +111,10 @@ switch (npm_lifecycle_event) {
                         },
                         {
                             label: 'Components',
-                            to: '/docs/SimpleCollection/block'
+                            to: '/docs/sample-doc'
                         }
                     ],
-                    copyright: `Copyright © ${new Date().getFullYear()} @uniwebcms/website-component-template. Built with Docusaurus.`
+                    copyright: `Copyright © ${new Date().getFullYear()} @uniwebcms/tutorial-starter Built with Docusaurus.`
                 },
                 prism: {
                     theme: lightCodeTheme,

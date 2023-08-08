@@ -1,0 +1,31 @@
+{
+    "title": "Component props",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "My component",
+            "description": "The title of the component"
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "#ffffff",
+            "description": "The background color of the component"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#000000",
+            "description": "The text color of the component"
+        },
+        "fontSize": {
+            "type": "number",
+            "default": 16,
+            "description": "The font size of the component"
+        },
+        "fontFamily": {
+            "type": "string",
+            "default": "Arial",
+            "description": "The font family of the component"
+        }
+    }
+}

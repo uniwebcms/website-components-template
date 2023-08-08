@@ -5963,6 +5963,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@uniwebcms/tutorial-starter", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/@uniwebcms-tutorial-starter-npm-1.1.2-f0e1d3002f-e1628172fe.zip/node_modules/@uniwebcms/tutorial-starter/",\
+          "packageDependencies": [\
+            ["@uniwebcms/tutorial-starter", "npm:1.1.2"],\
+            ["chalk", "npm:4.1.2"],\
+            ["fs-extra", "npm:11.1.1"],\
+            ["image-size", "npm:1.0.2"],\
+            ["photoswipe", "npm:5.3.8"],\
+            ["react", "npm:17.0.2"],\
+            ["react-dom", "virtual:824c58c4ca55fef1a076a1e64b7aec198a1ece2c5def509c3d1d297365e28d0ced92769a9e6ef28770f6904227157ce4b4bf37f4004599fd784716c78f724d03#npm:17.0.2"],\
+            ["react-photoswipe-gallery", "virtual:f0e1d3002f4becabf55d31825082bdce604995a0727bdc745da68c6e99312011f801af591823ad741131226385d24a714b04f7cdeed9877da723588f5db26972#npm:2.2.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@webassemblyjs/ast", [\
         ["npm:1.11.6", {\
           "packageLocation": "./.yarn/cache/@webassemblyjs-ast-npm-1.11.6-d3fd2bb49a-38ef1b526c.zip/node_modules/@webassemblyjs/ast/",\
@@ -15051,15 +15067,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.2.7", {\
-          "packageLocation": "./.yarn/__virtual__/react-photoswipe-gallery-virtual-4b6383638b/0/cache/react-photoswipe-gallery-npm-2.2.7-7b3f6bdf03-fa14f923f3.zip/node_modules/react-photoswipe-gallery/",\
+        ["virtual:f0e1d3002f4becabf55d31825082bdce604995a0727bdc745da68c6e99312011f801af591823ad741131226385d24a714b04f7cdeed9877da723588f5db26972#npm:2.2.7", {\
+          "packageLocation": "./.yarn/__virtual__/react-photoswipe-gallery-virtual-878ddf639d/0/cache/react-photoswipe-gallery-npm-2.2.7-7b3f6bdf03-fa14f923f3.zip/node_modules/react-photoswipe-gallery/",\
           "packageDependencies": [\
-            ["react-photoswipe-gallery", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.2.7"],\
+            ["react-photoswipe-gallery", "virtual:f0e1d3002f4becabf55d31825082bdce604995a0727bdc745da68c6e99312011f801af591823ad741131226385d24a714b04f7cdeed9877da723588f5db26972#npm:2.2.7"],\
             ["@types/photoswipe", null],\
             ["@types/prop-types", null],\
             ["@types/react", null],\
             ["photoswipe", "npm:5.3.8"],\
-            ["prop-types", "npm:15.8.1"],\
+            ["prop-types", null],\
             ["react", "npm:17.0.2"]\
           ],\
           "packagePeers": [\
@@ -16984,15 +17000,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/module-type-aliases", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.4.1"],\
             ["@docusaurus/preset-classic", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.4.1"],\
             ["@mdx-js/react", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:1.6.22"],\
+            ["@uniwebcms/tutorial-starter", "npm:1.1.2"],\
             ["chalk", "npm:4.1.2"],\
             ["dotenv", "npm:10.0.0"],\
-            ["image-size", "npm:1.0.2"],\
-            ["photoswipe", "npm:5.3.8"],\
             ["prism-react-renderer", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:1.3.5"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:17.0.2"],\
-            ["react-dom", "virtual:824c58c4ca55fef1a076a1e64b7aec198a1ece2c5def509c3d1d297365e28d0ced92769a9e6ef28770f6904227157ce4b4bf37f4004599fd784716c78f724d03#npm:17.0.2"],\
-            ["react-photoswipe-gallery", "virtual:f61da2eda165e0bd1ba91930b0a7fad35856a86a68e06b44590d9e5b69624d210e331a622ff4282424158cb0b5a26424df3c345fdc151ee6b929fe58f4d922c4#npm:2.2.7"]\
+            ["react-dom", "virtual:824c58c4ca55fef1a076a1e64b7aec198a1ece2c5def509c3d1d297365e28d0ced92769a9e6ef28770f6904227157ce4b4bf37f4004599fd784716c78f724d03#npm:17.0.2"]\
           ],\
           "linkType": "SOFT"\
         }]\

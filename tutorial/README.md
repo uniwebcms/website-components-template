@@ -1,41 +1,112 @@
-# Website
+# tutorial-starter
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+tutorial-starter is an npm library that helps you quickly create a tutorial website using Docusaurus.
 
-### Installation
+## Getting Started
 
+### Prerequisites
+
+- Node.js (version 16.14 or higher)
+- npm (Node Package Manager) or Yarn
+
+### Quick Start
+
+To create a new tutorial website, use the following command:
+
+```bash
+npx @uniwebcms/tutorial-starter@latest init [project-name]
 ```
-$ yarn
+
+This will initialize a new tutorial website project in the `project-name` directory under your project root. The <b>\`project-name\`</b> argument is optional. If you don't provide a project name, the default name "tutorial" will be used.
+
+### Project Structure
+
+Once initialized, the project structure will look like this:
+
+```lua
+my-tutorial-website/
+    ├── README.md
+    ├── babel.config.js
+    ├── docs
+    │   └── sample-doc.mdx
+    ├── docusaurus.config.js
+    ├── package.json
+    ├── scripts
+    │   ├── checkUpdate.js
+    │   └── prebuild.js
+    ├── sidebars.js
+    ├── src
+    │   ├── components
+    │   │   └── index.js
+    │   ├── css
+    │   │   └── custom.css
+    │   └── pages
+    │       └── index.mdx
+    └── static
+        ├── img
+        │   ├── favicon.png
+        │   ├── logo.svg
+        │   ├── sample.png
+        │   ├── uniweb_black.svg
+        │   └── uniweb_white.svg
+        └── schemas
+            └── sample.json
 ```
+- The `docs` directory contains the documentation files for your tutorial website.
+- The `src` directory contains the component, css file and pages.
+- The `static` directory contains the static assets files such as image and json files.
+- The `docusaurus.config.js` file is the configuration file for Docusaurus.
+- The `sidebar.js` file is the configuration file for website sidebar.
 
 ### Local Development
 
-```
-$ yarn start
-```
+To start a local development server and preview your tutorial website, run the following commands:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+cd my-tutorial-website
+npm install
+npm start
+# OR
+yarn install
+yarn start
 ```
 
-Not using SSH:
-
+#### Build and serve locally for testing
+```bash
+cd my-tutorial-website
+npm run build:dev
+npm run serve:dev
+# OR
+yarn build:dev
+yarn serve:dev
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+The built website will be available in the `build` under `my-tutorial-website` directory.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This will start the development server, and you can view the website at `http://localhost:3000`.
+
+### Building for Production
+To build the website for production, you have the following two options:
+
+#### Build and locally and commit manually
+```bash
+cd my-tutorial-website
+npm run build:prod
+# OR
+yarn build:prod
+```
+The built website will be available in the `dist` under the project root directory, you can them manually commit it.
+
+#### Build using GitHub Actions workflow
+```bash
+cd my-tutorial-website
+npm run build:gh
+# OR
+yarn build:gh
+```
+This script should be used in a workflow executed by GitHub Actions to provide the necessary environment variables. The built website will be available in the `dist` directory under the project's root. Once the build artifact is uploaded to GitHub Pages, the website can be visited via the GitHub Pages URL.
+
+### Contributing
+We welcome contributions to website-starter. Feel free to submit bug reports, feature requests, or pull requests on our [GitHub repository](https://github.com/uniwebcms).
+
+### License
+This project is licensed under the MIT License.

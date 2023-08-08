@@ -119,3 +119,10 @@ typings/
 
 builder/entries/*
 apps/*/public/dev
+
+# tutorial related
+/tutorial/node_modules
+/tutorial/build
+/tutorial/.docusaurus
+/tutorial/.cache-loader
+/tutorial/static/img/dimensions.json
