@@ -54,7 +54,7 @@ jobs:
                     echo "Skipping build tutorial";
                   else
                     echo "Starting build tutorial";
-                    yarn build:tutorial:GH;
+                    yarn build:tutorial:gh;
                   fi
 
             - name: Setup Pages
