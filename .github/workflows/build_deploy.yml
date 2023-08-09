@@ -57,6 +57,9 @@ jobs:
                     yarn build:tutorial:gh;
                   fi
 
+            - name: Generate index page
+              run: node .github/scripts/generateIndex.js $GITHUB_REPOSITORY
+              
             - name: Setup Pages
               uses: actions/configure-pages@v3
 
