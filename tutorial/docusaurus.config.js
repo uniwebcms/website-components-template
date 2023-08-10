@@ -81,9 +81,9 @@ switch (npm_lifecycle_event) {
                 navbar: {
                     title: 'Introduction',
                     logo: {
-                        alt: 'UNIWEB Logo',
-                        src: 'img/uniweb_black.svg',
-                        srcDark: 'img/uniweb_white.svg',
+                        alt: 'Uniweb Modules Logo',
+                        src: 'img/logo.svg',
+                        srcDark: 'img/logo_light.svg',
                         width: 120,
                         style: { marginRight: '18px' }
                     },

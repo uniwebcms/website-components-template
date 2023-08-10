@@ -45,10 +45,9 @@ my-tutorial-website/
     └── static
         ├── img
         │   ├── favicon.png
-        │   ├── logo.svg
         │   ├── sample.png
-        │   ├── uniweb_black.svg
-        │   └── uniweb_white.svg
+        │   ├── logo.svg
+        │   └── logo_light.svg
         └── schemas
             └── sample.json
 ```
