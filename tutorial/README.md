@@ -28,7 +28,7 @@ my-tutorial-website/
     ├── README.md
     ├── babel.config.js
     ├── docs
-    │   └── sample-doc.mdx
+    │   └── block.mdx
     ├── docusaurus.config.js
     ├── package.json
     ├── scripts
@@ -45,11 +45,11 @@ my-tutorial-website/
     └── static
         ├── img
         │   ├── favicon.png
-        │   ├── sample.png
+        │   ├── block1.png
         │   ├── logo.svg
         │   └── logo_light.svg
         └── schemas
-            └── sample.json
+            └── block.json
 ```
 - The `docs` directory contains the documentation files for your tutorial website.
 - The `src` directory contains the component, css file and pages.

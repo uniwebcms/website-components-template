@@ -90,7 +90,7 @@ switch (npm_lifecycle_event) {
                     items: [
                         {
                             type: 'doc',
-                            docId: 'sample-doc',
+                            docId: 'block',
                             position: 'left',
                             label: 'Docs'
                         }
@@ -99,8 +99,8 @@ switch (npm_lifecycle_event) {
                 footer: {
                     style: 'dark',
                     logo: {
-                        alt: 'UNIWEB Logo',
-                        src: 'img/uniweb_white.svg',
+                        alt: 'Uniweb Modules Logo',
+                        src: 'img/logo_light.svg',
                         width: 160,
                         height: 51
                     },
@@ -114,7 +114,7 @@ switch (npm_lifecycle_event) {
                             to: '/docs/sample-doc'
                         }
                     ],
-                    copyright: `Copyright © ${new Date().getFullYear()} @uniwebcms/tutorial-starter Built with Docusaurus.`
+                    copyright: `Copyright © ${new Date().getFullYear()} Tutorial website by <a href="https://proximify.com">Proximify</a>.`
                 },
                 prism: {
                     theme: lightCodeTheme,

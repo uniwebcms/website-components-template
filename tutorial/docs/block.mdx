@@ -1,0 +1,29 @@
+---
+sidebar_position: 1
+sidebar_label: Block
+---
+
+import Options from '@site/static/schemas/block.json';
+import { Gallery, SchemaViewer } from '../src/components/index.js';
+
+# Block
+
+A component designed to showcase multiple features.
+
+<Gallery images={['block1.png']} />{' '}
+
+## Expected content
+
+-   Image: lead image as background (optional)
+-   H2: lead heading (optional)
+-   H1: main heading (recommended)
+-   Paragraph: a single paragraph as body text (optional)
+-   Image or video: trailing image/video as foreground asset (optional)
+
+## Layout Options
+
+-   Align the main heading (H1) to Left / Center / Right to activate different layouts
+
+## Advanced Properties
+
+<SchemaViewer schema={Options} />
