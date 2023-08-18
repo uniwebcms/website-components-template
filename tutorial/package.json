@@ -9,8 +9,8 @@
         "build:dev": "yarn prebuild && docusaurus build",
         "serve:dev": "docusaurus serve --port 3000",
         "clear": "rm -rf static/img/dimensions.json && docusaurus clear",
-        "build:prod": "yarn prebuild && docusaurus build --out-dir ../dist/tutorial",
-        "build:gh": "yarn prebuild && docusaurus build --out-dir ../dist/tutorial",
+        "build:prod": "yarn prebuild && docusaurus build --out-dir ../dist/_docs",
+        "build:gh": "yarn prebuild && docusaurus build --out-dir ../dist/_docs",
         "checkUpdate": "yarn node ./scripts/checkUpdate.js"
     },
     "peerDependencies": {
