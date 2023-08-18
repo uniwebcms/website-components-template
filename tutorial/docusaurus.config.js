@@ -20,7 +20,7 @@ switch (npm_lifecycle_event) {
     case 'build:prod':
         if (TUTORIAL_SITE_URL && TUTORIAL_SITE_BASE_URL) {
             url = TUTORIAL_SITE_URL;
-            baseUrl = `${TUTORIAL_SITE_BASE_URL}tutorial/`;
+            baseUrl = `${TUTORIAL_SITE_BASE_URL}_docs/`;
             break;
         } else {
             let message =
@@ -41,7 +41,7 @@ switch (npm_lifecycle_event) {
             url = `https://${GITHUB_REPOSITORY_OWNER}.github.io`;
 
             const repo = GITHUB_REPOSITORY.replace(GITHUB_REPOSITORY_OWNER, '').replace(/^\/|\/$/g, '');
-            baseUrl = `/${repo}/tutorial/`;
+            baseUrl = `/${repo}/_docs/`;
             break;
         } else {
             let message = chalk.yellow.bold('Warning! ') + chalk.white('Critical environment variables are missing. This could potentially occur when building in production mode outside of the GitHub Actions Workflow environment.');
