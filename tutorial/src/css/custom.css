@@ -30,3 +30,23 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .pswp--open {
     display: block !important;
 }
+
+.imageGallery {
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+    background: #e5e5e5;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.imageGallery img {
+    cursor: pointer;
+    width: 180px;
+    height: 130px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
