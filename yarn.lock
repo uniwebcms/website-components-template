@@ -2448,58 +2448,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@floating-ui/core@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@floating-ui/core@npm:1.4.0"
-  dependencies:
-    "@floating-ui/utils": ^0.1.0
-  checksum: 8549ad349dab33498d79a3fb558616eb80c2d0301ee7739832e49d51398da6e7fa2b2e4f4088af2c346c011ce2c4a61a2d1348838c6e0119e15e81a827ba00a7
-  languageName: node
-  linkType: hard
-
-"@floating-ui/dom@npm:^1.3.0":
-  version: 1.5.0
-  resolution: "@floating-ui/dom@npm:1.5.0"
-  dependencies:
-    "@floating-ui/core": ^1.4.0
-    "@floating-ui/utils": ^0.1.0
-  checksum: 61e97e0625279deb2e9fba9d7f85491ce3bfdbaf0adc31f2ee101a82e2879dd62945ee9ea0c83cf82481a711af9a43ccfd31b9ec017718be8b9028ff2a1da5b2
-  languageName: node
-  linkType: hard
-
-"@floating-ui/react-dom@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@floating-ui/react-dom@npm:2.0.1"
-  dependencies:
-    "@floating-ui/dom": ^1.3.0
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 00fef2cf69ac2b15952e47505fd9e23f6cc5c20a26adc707862932826d1682f3c30f83c9887abfc93574fdca2d34dd2fc00271527318b1db403549cd6bc9eb00
-  languageName: node
-  linkType: hard
-
-"@floating-ui/react@npm:^0.24.3":
-  version: 0.24.8
-  resolution: "@floating-ui/react@npm:0.24.8"
-  dependencies:
-    "@floating-ui/react-dom": ^2.0.1
-    aria-hidden: ^1.2.3
-    tabbable: ^6.0.1
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: b345d3bbb7b1eb4a8d09bb5cb0c46713b0b051578a1bb15fb49708b27009dcb992cdd55ffc79ae56d7e4494ce122f6e971e7d2737c9a2bffd88cb2408230f9af
-  languageName: node
-  linkType: hard
-
-"@floating-ui/utils@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@floating-ui/utils@npm:0.1.0"
-  checksum: 71c865f0c6ab3f0a66355b80ca1b6438ea4bbf3aaa66421fc9bbddea08e814b94a75b25cb9c0cba09fd8775b8952b8e59affecf5db4dc3235849e25b2c011dbe
-  languageName: node
-  linkType: hard
-
 "@googlemaps/js-api-loader@npm:1.16.2":
   version: 1.16.2
   resolution: "@googlemaps/js-api-loader@npm:1.16.2"
@@ -2743,14 +2691,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@popperjs/core@npm:^2.10.1, @popperjs/core@npm:^2.9.3":
+"@popperjs/core@npm:^2.10.1":
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
   checksum: e5c69fdebf52a4012f6a1f14817ca8e9599cb1be73dd1387e1785e2ed5e5f0862ff817f420a87c7fc532add1f88a12e25aeb010ffcbdc98eace3d55ce2139cf0
   languageName: node
   linkType: hard
 
-"@react-google-maps/api@npm:^2.17.1, @react-google-maps/api@npm:^2.18.1":
+"@react-google-maps/api@npm:^2.17.1":
   version: 2.19.2
   resolution: "@react-google-maps/api@npm:2.19.2"
   dependencies:
@@ -3422,25 +3370,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/express@npm:^2.2.0":
-  version: 2.2.3
-  resolution: "@uniwebcms/express@npm:2.2.3"
-  dependencies:
-    "@headlessui/react": ^1.7.3
-    "@popperjs/core": ^2.10.1
-    "@react-google-maps/api": ^2.18.1
-    "@uniwebcms/module-sdk": ^1.9.1
-    flowbite-react: ^0.4.9
-    react-icons: ^4.6.0
-    react-spinners: ^0.13.8
-  peerDependencies:
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    tailwindcss: ^3.2.4
-  checksum: 467e132156c44a4c4780940de570aa430338ec63670bd5df72d643052412f3948d5f67081dcf99209d66dd10eee7a0c4fda43400550e5f0ccb3b11cb8b184e52
-  languageName: node
-  linkType: hard
-
 "@uniwebcms/module-builder@npm:^1.2.7":
   version: 1.2.7
   resolution: "@uniwebcms/module-builder@npm:1.2.7"
@@ -3471,9 +3400,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/module-sdk@npm:^1.7.1, @uniwebcms/module-sdk@npm:^1.9.1":
-  version: 1.9.1
-  resolution: "@uniwebcms/module-sdk@npm:1.9.1"
+"@uniwebcms/module-sdk@npm:^1.12.1":
+  version: 1.13.0
+  resolution: "@uniwebcms/module-sdk@npm:1.13.0"
   dependencies:
     "@headlessui/react": ^1.7.3
     "@popperjs/core": ^2.10.1
@@ -3485,24 +3414,28 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 1b1edcdc0b61002469a58a47888e3ed8308e118ae2e87ad27b78093a7a09533fe65826ace8edb63e81031001437095c7b4e4d5439a9f217361f6df75b39545f5
+  checksum: 4d75cb31db5cf9b4e7f2862f078c644158fb4714728ac4bbc25c0c3248d2f8df4030eaa4d12a0d39cda2c5c40a47ad0a21db5a8b25431e98d77e816015e6d4e9
   languageName: node
   linkType: hard
 
-"@uniwebcms/tutorial-starter@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@uniwebcms/tutorial-starter@npm:1.1.2"
+"@uniwebcms/tutorial-builder@npm:^1.3.8":
+  version: 1.3.8
+  resolution: "@uniwebcms/tutorial-builder@npm:1.3.8"
   dependencies:
     chalk: 4.1.2
     fs-extra: ^11.1.1
+    glob: ^10.3.3
     image-size: ^1.0.2
+    js-yaml: ^4.1.0
     photoswipe: ^5.3.8
+    prop-types: ^15.8.1
+    react-photoswipe-gallery: 2.2.7
+  peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-photoswipe-gallery: 2.2.7
   bin:
-    tutorial-starter: bin/script.js
-  checksum: e1628172fe967f8ac7c470705275bf6ba4ca929b90f8379eca8df26e47e9a4fe06c100e392a47b8322f697c836e3fb6a14d6b843600a2a57ec48c1faca08bca9
+    tutorial-builder: bin/script.js
+  checksum: a9353a587dcb41d7d581bbde9186eee847d10072b864b8de139b11c26566627a92b2a7411a238295b7ddf46a3129640cda1abd8c07a3a5eaffb205ef6fcade51
   languageName: node
   linkType: hard
 
@@ -3985,15 +3918,6 @@ __metadata:
   version: 2.0.1
   resolution: "argparse@npm:2.0.1"
   checksum: 83644b56493e89a254bae05702abf3a1101b4fa4d0ca31df1c9985275a5a5bd47b3c27b7fa0b71098d41114d8ca000e6ed90cad764b306f8a503665e4d517ced
-  languageName: node
-  linkType: hard
-
-"aria-hidden@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "aria-hidden@npm:1.2.3"
-  dependencies:
-    tslib: ^2.0.0
-  checksum: 7d7d211629eef315e94ed3b064c6823d13617e609d3f9afab1c2ed86399bb8e90405f9bdd358a85506802766f3ecb468af985c67c846045a34b973bcc0289db9
   languageName: node
   linkType: hard
 
@@ -4596,13 +4520,6 @@ __metadata:
   version: 3.8.0
   resolution: "ci-info@npm:3.8.0"
   checksum: d0a4d3160497cae54294974a7246202244fff031b0a6ea20dd57b10ec510aa17399c41a1b0982142c105f3255aff2173e5c0dd7302ee1b2f28ba3debda375098
-  languageName: node
-  linkType: hard
-
-"classnames@npm:^2.2.6":
-  version: 2.3.2
-  resolution: "classnames@npm:2.3.2"
-  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
   languageName: node
   linkType: hard
 
@@ -5333,13 +5250,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debounce@npm:^1.2.0":
-  version: 1.2.1
-  resolution: "debounce@npm:1.2.1"
-  checksum: 682a89506d9e54fb109526f4da255c5546102fbb8e3ae75eef3b04effaf5d4853756aee97475cd4650641869794e44f410eeb20ace2b18ea592287ab2038519e
-  languageName: node
-  linkType: hard
-
 "debug@npm:2.6.9, debug@npm:^2.6.0":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -5680,13 +5590,6 @@ __metadata:
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
   checksum: 7d00d7cd8e49b9afa762a813faac332dee781932d6f2c848dc348939c4253f1d4564341b7af1d041853bc3f32c2ef141b58e0a4d9862c17a7f08f68df1e0f1ed
-  languageName: node
-  linkType: hard
-
-"easy-bem@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "easy-bem@npm:1.1.1"
-  checksum: c4d44a8cd792fddf9e1869bba543b7ec958080d56ea4764bb6e53b8238a0c2d075f0ee46b95f9dca40032b3e56e5bfc794a5da286eaf424d9db730c5ae91d656
   languageName: node
   linkType: hard
 
@@ -6238,33 +6141,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flowbite-react@npm:^0.4.9":
-  version: 0.4.11
-  resolution: "flowbite-react@npm:0.4.11"
-  dependencies:
-    "@floating-ui/react": ^0.24.3
-    flowbite: ^1.6.6
-    react-icons: ^4.10.1
-    react-indiana-drag-scroll: ^2.2.0
-    tailwind-merge: ^1.13.2
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-    tailwindcss: ^3
-  checksum: fd28990a3ff9a227e4cf8f157b4ac1b9b6eb0d533925e3543f5a41e3e3de15170e63155ba6917a30db5fd92fc4b146fdbfa9fd65d73c50b8a054e5058ba9bc9b
-  languageName: node
-  linkType: hard
-
-"flowbite@npm:^1.6.6":
-  version: 1.7.0
-  resolution: "flowbite@npm:1.7.0"
-  dependencies:
-    "@popperjs/core": ^2.9.3
-    mini-svg-data-uri: ^1.4.3
-  checksum: 3efa24064bb4992e92893c3edee866aa4db570a2a308275ecbd77fe0068d7bd325963fd8f4c608b0de44b51411b13f33606fe7facc1239a3784b5a3f4ae63aea
-  languageName: node
-  linkType: hard
-
 "flux@npm:^4.0.1":
   version: 4.0.4
   resolution: "flux@npm:4.0.4"
@@ -6602,6 +6478,21 @@ __metadata:
   bin:
     glob: dist/cjs/src/bin.js
   checksum: 29190d3291f422da0cb40b77a72fc8d2c51a36524e99b8bf412548b7676a6627489528b57250429612b6eec2e6fe7826d328451d3e694a9d15e575389308ec53
+  languageName: node
+  linkType: hard
+
+"glob@npm:^10.3.3":
+  version: 10.3.10
+  resolution: "glob@npm:10.3.10"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^2.3.5
+    minimatch: ^9.0.1
+    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
+    path-scurry: ^1.10.1
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 4f2fe2511e157b5a3f525a54092169a5f92405f24d2aed3142f4411df328baca13059f4182f1db1bf933e2c69c0bd89e57ae87edd8950cba8c7ccbe84f721cf3
   languageName: node
   linkType: hard
 
@@ -7646,6 +7537,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jackspeak@npm:^2.3.5":
+  version: 2.3.6
+  resolution: "jackspeak@npm:2.3.6"
+  dependencies:
+    "@isaacs/cliui": ^8.0.2
+    "@pkgjs/parseargs": ^0.11.0
+  dependenciesMeta:
+    "@pkgjs/parseargs":
+      optional: true
+  checksum: 57d43ad11eadc98cdfe7496612f6bbb5255ea69fe51ea431162db302c2a11011642f50cfad57288bd0aea78384a0612b16e131944ad8ecd09d619041c8531b54
+  languageName: node
+  linkType: hard
+
 "jest-util@npm:^29.6.2":
   version: 29.6.2
   resolution: "jest-util@npm:29.6.2"
@@ -7689,6 +7593,15 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: fdf55e315f9e81c04ae902416642062851d92c6cdcc17a59d5d1d35e1a0842e4e79be38da86613c5776fa18c579954542a441b93d1c347a50137dee2e558cbd0
+  languageName: node
+  linkType: hard
+
+"jiti@npm:^1.19.1":
+  version: 1.21.0
+  resolution: "jiti@npm:1.21.0"
+  bin:
+    jiti: bin/jiti.js
+  checksum: a7bd5d63921c170eaec91eecd686388181c7828e1fa0657ab374b9372bfc1f383cf4b039e6b272383d5cb25607509880af814a39abdff967322459cca41f2961
   languageName: node
   linkType: hard
 
@@ -8264,15 +8177,6 @@ __metadata:
   peerDependencies:
     webpack: ^5.0.0
   checksum: be6f7cefc6275168eb0a6b8fe977083a18c743c9612c9f00e6c1a62c3393ca7960e93fba1a7ebb09b75f36a0204ad087d772c1ef574bc29c90c0e8175a3c0b83
-  languageName: node
-  linkType: hard
-
-"mini-svg-data-uri@npm:^1.4.3":
-  version: 1.4.4
-  resolution: "mini-svg-data-uri@npm:1.4.4"
-  bin:
-    mini-svg-data-uri: cli.js
-  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
   languageName: node
   linkType: hard
 
@@ -10227,6 +10131,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dom@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react-dom@npm:18.2.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    scheduler: ^0.23.0
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
 "react-error-overlay@npm:^6.0.11":
   version: 6.0.11
   resolution: "react-error-overlay@npm:6.0.11"
@@ -10266,26 +10182,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.10.1, react-icons@npm:^4.6.0":
+"react-icons@npm:^4.6.0":
   version: 4.10.1
   resolution: "react-icons@npm:4.10.1"
   peerDependencies:
     react: "*"
   checksum: b6c8d4fe482b112e1041515d93ef7670a0af128855c926052a076b64d0b991cdd4391394b26467100f8da3859db1ebd8f9c6b7614fa5969fde83de45c71031a3
-  languageName: node
-  linkType: hard
-
-"react-indiana-drag-scroll@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "react-indiana-drag-scroll@npm:2.2.0"
-  dependencies:
-    classnames: ^2.2.6
-    debounce: ^1.2.0
-    easy-bem: ^1.1.1
-  peerDependencies:
-    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 763efd503c5f3815bc5bf713c2fdb886911aa2cc5986033acf3c48b01c51dd05e6aec54929161e20d3c55fce56219f5070e332e9ee02175190685770c1ec310d
   languageName: node
   linkType: hard
 
@@ -10401,16 +10303,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-spinners@npm:^0.13.8":
-  version: 0.13.8
-  resolution: "react-spinners@npm:0.13.8"
-  peerDependencies:
-    react: ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: cb58f916bbf00c4f7fc33c1a75a8c0f91a98a42af26944340a0e29e4b3a97937a03f0292bc444eb5f5f0bea099344b580f9c04a81524246dadbf0571bdb57e62
-  languageName: node
-  linkType: hard
-
 "react-textarea-autosize@npm:^8.3.2":
   version: 8.5.2
   resolution: "react-textarea-autosize@npm:8.5.2"
@@ -10431,6 +10323,15 @@ __metadata:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
   checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
+  languageName: node
+  linkType: hard
+
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
   languageName: node
   linkType: hard
 
@@ -10931,6 +10832,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"scheduler@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "scheduler@npm:0.23.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
+  languageName: node
+  linkType: hard
+
 "schema-utils@npm:2.7.0":
   version: 2.7.0
   resolution: "schema-utils@npm:2.7.0"
@@ -11231,12 +11141,11 @@ __metadata:
   dependencies:
     "@headlessui/react": ^1.7.13
     "@tailwindcss/line-clamp": ^0.4.4
-    "@uniwebcms/express": ^2.2.0
-    "@uniwebcms/module-sdk": ^1.7.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
+    "@uniwebcms/module-sdk": ^1.12.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
     react-icons: ^4.6.0
-    tailwindcss: ^3.2.4
+    tailwindcss: ^3.3.3
   peerDependencies:
     react: "*"
     react-dom: "*"
@@ -11675,13 +11584,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tabbable@npm:^6.0.1":
-  version: 6.2.0
-  resolution: "tabbable@npm:6.2.0"
-  checksum: f8440277d223949272c74bb627a3371be21735ca9ad34c2570f7e1752bd646ccfc23a9d8b1ee65d6561243f4134f5fbbf1ad6b39ac3c4b586554accaff4a1300
-  languageName: node
-  linkType: hard
-
 "tailwind-merge@npm:^1.13.2":
   version: 1.14.0
   resolution: "tailwind-merge@npm:1.14.0"
@@ -11719,6 +11621,39 @@ __metadata:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
   checksum: 0195c7a3ebb0de5e391d2a883d777c78a4749f0c532d204ee8aea9129f2ed8e701d8c0c276aa5f7338d07176a3c2a7682c1d0ab9c8a6c2abe6d9325c2954eb50
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^3.3.3":
+  version: 3.3.5
+  resolution: "tailwindcss@npm:3.3.5"
+  dependencies:
+    "@alloc/quick-lru": ^5.2.0
+    arg: ^5.0.2
+    chokidar: ^3.5.3
+    didyoumean: ^1.2.2
+    dlv: ^1.1.3
+    fast-glob: ^3.3.0
+    glob-parent: ^6.0.2
+    is-glob: ^4.0.3
+    jiti: ^1.19.1
+    lilconfig: ^2.1.0
+    micromatch: ^4.0.5
+    normalize-path: ^3.0.0
+    object-hash: ^3.0.0
+    picocolors: ^1.0.0
+    postcss: ^8.4.23
+    postcss-import: ^15.1.0
+    postcss-js: ^4.0.1
+    postcss-load-config: ^4.0.1
+    postcss-nested: ^6.0.1
+    postcss-selector-parser: ^6.0.11
+    resolve: ^1.22.2
+    sucrase: ^3.32.0
+  bin:
+    tailwind: lib/cli.js
+    tailwindcss: lib/cli.js
+  checksum: e04bb3bb7f9f17e9b6db0c7ace755ef0d6d05bff36ebeb9e5006e13c018ed5566f09db30a1a34380e38fa93ebbb4ae0e28fe726879d5e9ddd8c5b52bffd26f14
   languageName: node
   linkType: hard
 
@@ -11913,7 +11848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0":
+"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0":
   version: 2.6.1
   resolution: "tslib@npm:2.6.1"
   checksum: b0d176d176487905b66ae4d5856647df50e37beea7571c53b8d10ba9222c074b81f1410fb91da13debaf2cbc970663609068bdebafa844ea9d69b146527c38fe
@@ -11928,13 +11863,12 @@ __metadata:
     "@docusaurus/module-type-aliases": 2.4.1
     "@docusaurus/preset-classic": 2.4.1
     "@mdx-js/react": ^1.6.22
-    "@uniwebcms/tutorial-starter": ^1.1.2
+    "@uniwebcms/tutorial-builder": ^1.3.8
     chalk: ^4.1.2
     dotenv: ^10.0.0
     prism-react-renderer: ^1.3.5
-    prop-types: ^15.8.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
   peerDependencies:
     react: "*"
     react-dom: "*"
