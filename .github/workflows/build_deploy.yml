@@ -135,7 +135,7 @@ jobs:
                   name: dist
                   failOnError: false
 
-    # release the artifact to the release branch, which is hosted bt GitHub Pages
+    # release the artifact to the release branch, which is hosted by GitHub Pages
     release:
         # wait until the prepare and build job to complete successfully
         needs: [prepare, build]
