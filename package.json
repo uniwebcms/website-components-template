@@ -19,7 +19,8 @@
         "watch": "cd builder && yarn run watch:tunnel",
         "build:tutorial": "cd tutorial && yarn build:prod",
         "build:tutorial:gh": "cd tutorial && yarn build:gh",
-        "deploy:gh-pages": "gh-pages -d dist"
+        "deploy:gh-pages": "gh-pages -d dist",
+        "build:manifest": "cd builder && yarn run build:manifest"
     },
     "dependencies": {
         "gh-pages": "^5.0.0",

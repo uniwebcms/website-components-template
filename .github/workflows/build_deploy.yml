@@ -34,10 +34,10 @@ jobs:
 
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Load env from local file
-              uses: falti/dotenv-action@v1.0.4 #https://github.com/falti/dotenv-action
+              uses: falti/dotenv-action@v1.1 #https://github.com/falti/dotenv-action
               with:
                   path: .env # path to .env file, relative to the root of the repository
                   keys-case: 'bypass'
@@ -60,7 +60,7 @@ jobs:
 
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Set GitHub Pages URL to env
               run: echo "GH_PAGES_URL=${{ needs.prepare.outputs.public_url }}" >> "$GITHUB_ENV"
@@ -70,6 +70,11 @@ jobs:
 
             - name: Build Module
               run: yarn build
+
+            - name: Build Manifest
+              run: yarn build:manifest
+              env:
+                  PUBLIC_URL: ${{ needs.prepare.outputs.public_url }}
 
             - name: Build Tutorial
               if: ${{ needs.prepare.outputs.skip_tutorial != 'true' }}
@@ -83,7 +88,7 @@ jobs:
 
             # upload the dist folder as an artifact for the deploy and release jobs to use, this is just for passing data between jobs, will be cleaned up afterwords
             - name: Upload Artifact for Deploy
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                   name: dist
                   path: ./dist
@@ -104,33 +109,33 @@ jobs:
 
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             # download the artifacts from the build job to the dist folder
             - name: Download Artifact
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                   name: dist
                   path: dist
 
             # setup the GitHub Pages environment
             - name: Setup Pages
-              uses: actions/configure-pages@v3
+              uses: actions/configure-pages@v4
 
             # upload the 'dist' folder as an artifact with specific settings tailored for GitHub Pages. The default name for the artifacts is 'gh-pages'
             - name: Upload Artifact for Github Pages
-              uses: actions/upload-pages-artifact@v1
+              uses: actions/upload-pages-artifact@v3
               with:
                   path: dist
 
             # deploy the dist folder to GitHub Pages
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v2
+              uses: actions/deploy-pages@v4
 
             # clean up the dist folder artifact, which uploaded by the build job
             - name: Clean Inter-job Artifacts
-              uses: geekyeggo/delete-artifact@v2
+              uses: geekyeggo/delete-artifact@v5
               with:
                   name: dist
                   failOnError: false
@@ -151,18 +156,18 @@ jobs:
 
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             # download the artifacts from the build job to the dist folder
             - name: Download Artifact
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                   name: dist
                   path: dist
 
             # deploy the dist folder to the release branch
             - name: Deploy to Release Branch
-              uses: peaceiris/actions-gh-pages@v3
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: dist # The folder to deploy
@@ -171,7 +176,7 @@ jobs:
 
             # clean up the dist folder artifact, which uploaded by the build job
             - name: Clean Inter-job Artifacts
-              uses: geekyeggo/delete-artifact@v2
+              uses: geekyeggo/delete-artifact@v4
               with:
                   name: dist
                   failOnError: false

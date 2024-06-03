@@ -3370,11 +3370,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/module-builder@npm:^1.3.0-beta.1":
-  version: 1.3.0-beta.1
-  resolution: "@uniwebcms/module-builder@npm:1.3.0-beta.1"
+"@uniwebcms/module-builder@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@uniwebcms/module-builder@npm:1.4.2"
   dependencies:
     "@tailwindcss/nesting": "npm:^0.0.0-insiders.565cd3e"
+    assets-webpack-plugin: "npm:^7.1.1"
     autoprefixer: "npm:^10.4.13"
     chalk: "npm:^4.1.2"
     compression-webpack-plugin: "npm:^10.0.0"
@@ -3390,13 +3391,16 @@ __metadata:
     "@babel/core": ^7.13.14
     "@babel/preset-env": ^7.13.12
     "@babel/preset-react": ^7.13.13
+    "@mdx-js/loader": ^3.0.1
+    "@mdx-js/mdx": ^3.0.1
+    "@mdx-js/react": ^3.0.1
     babel-loader: ^8.2.2
     css-loader: ^5.2.0
     postcss: ^8.4.20
     postcss-loader: ^7.0.2
     style-loader: ^2.0.0
     webpack: ^5.74.0
-  checksum: 10/871531cc6a684affc60cfcdfe767c32cccc7396e78d0fbb94ebde2c33b73ce233d16075a83d5073200055fa0db3a57d61f8e96387644c77c42611c99d7eb60b4
+  checksum: 10/2afd9381b465174728b0e361020ad8e6957e024138c4d7176eca35b8e2e12a9e80253753bbc31122626199dfa6badd0b1e2f5e2019601489712ac6b8d01abec2
   languageName: node
   linkType: hard
 
@@ -3418,9 +3422,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/tutorial-builder@npm:^1.3.8":
-  version: 1.3.8
-  resolution: "@uniwebcms/tutorial-builder@npm:1.3.8"
+"@uniwebcms/tutorial-builder@npm:^1.3.10":
+  version: 1.3.10
+  resolution: "@uniwebcms/tutorial-builder@npm:1.3.10"
   dependencies:
     chalk: "npm:4.1.2"
     fs-extra: "npm:^11.1.1"
@@ -3435,7 +3439,7 @@ __metadata:
     react-dom: ^17.0.2
   bin:
     tutorial-builder: bin/script.js
-  checksum: 10/9af9256e87be06d5665a3ffc194079a40ce756cc78c4dbaeb06235c35c6ef21b48f475fba857a65b94ee6813053330134e9c28229db2f3707ab1aee36d10977b
+  checksum: 10/73643293a49b4ede3496177bf342a87cda3b8098cbb69211cf7b130567bb0f6089b6c88693cebe555bbe0681854b3d2d0c82c21cb64243875a4fce474d454d11
   languageName: node
   linkType: hard
 
@@ -3965,6 +3969,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"assets-webpack-plugin@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "assets-webpack-plugin@npm:7.1.1"
+  dependencies:
+    camelcase: "npm:^6.0.0"
+    escape-string-regexp: "npm:^4.0.0"
+    lodash: "npm:^4.17.21"
+  peerDependencies:
+    webpack: ">=5.0.0"
+  checksum: 10/806f9bbc72a257a25fe1d6d312e2e6a2efdcea7303926f4de6b4a8d9ed7d8642143ab48d61be7b93dda97eb33edfb24ec8fcfc1f451863f34b8636b26a12d5ce
+  languageName: node
+  linkType: hard
+
 "async@npm:^2.6.4":
   version: 2.6.4
   resolution: "async@npm:2.6.4"
@@ -4274,7 +4291,7 @@ __metadata:
     "@babel/core": "npm:^7.13.14"
     "@babel/preset-env": "npm:^7.13.12"
     "@babel/preset-react": "npm:^7.13.13"
-    "@uniwebcms/module-builder": "npm:^1.3.0-beta.1"
+    "@uniwebcms/module-builder": "npm:^1.4.2"
     babel-loader: "npm:^8.2.2"
     css-loader: "npm:^5.2.0"
     dotenv: "npm:^10.0.0"
@@ -4373,7 +4390,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camelcase@npm:^6.2.0":
+"camelcase@npm:^6.0.0, camelcase@npm:^6.2.0":
   version: 6.3.0
   resolution: "camelcase@npm:6.3.0"
   checksum: 10/8c96818a9076434998511251dcb2761a94817ea17dbdc37f47ac080bd088fc62c7369429a19e2178b993497132c8cbcf5cc1f44ba963e76782ba469c0474938d
@@ -11864,7 +11881,7 @@ __metadata:
     "@docusaurus/module-type-aliases": "npm:2.4.1"
     "@docusaurus/preset-classic": "npm:2.4.1"
     "@mdx-js/react": "npm:^1.6.22"
-    "@uniwebcms/tutorial-builder": "npm:^1.3.8"
+    "@uniwebcms/tutorial-builder": "npm:^1.3.10"
     chalk: "npm:^4.1.2"
     dotenv: "npm:^10.0.0"
     prism-react-renderer: "npm:^1.3.5"

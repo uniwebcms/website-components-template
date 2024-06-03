@@ -13,7 +13,8 @@
         "build:prod-copy": "webpack --mode=production && run-func helper.js doDeploy",
         "build:prod-copy-commit": "webpack --mode=production && run-func helper.js doDeploy commit",
         "serve": "node server.js",
-        "watch": "webpack --mode=development --watch --env tunnel"
+        "watch": "webpack --mode=development --watch --env tunnel",
+        "build:manifest": "PUBLIC_URL=$PUBLIC_URL node postBuild.js"
     },
     "author": "",
     "license": "ISC",
