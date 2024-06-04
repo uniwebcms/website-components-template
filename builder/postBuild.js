@@ -36,7 +36,7 @@ function createFileMappings(buildDir, moduleName, latestVersion) {
         files.forEach((file) => {
             const filePath = path.join(buildDir, file);
             if (fs.statSync(filePath).isFile()) {
-                fileMappings[file] = `${PUBLIC_URL}/${moduleName}/${latestVersion}/${file}`;
+                fileMappings[file] = `${PUBLIC_URL.toLowerCase()}/${moduleName}/${latestVersion}/${file}`;
             }
         });
     } catch (err) {
