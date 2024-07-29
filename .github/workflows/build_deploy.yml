@@ -176,7 +176,7 @@ jobs:
 
             # clean up the dist folder artifact, which uploaded by the build job
             - name: Clean Inter-job Artifacts
-              uses: geekyeggo/delete-artifact@v4
+              uses: geekyeggo/delete-artifact@v5
               with:
                   name: dist
                   failOnError: false

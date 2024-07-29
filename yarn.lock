@@ -3404,9 +3404,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniwebcms/module-sdk@npm:^1.18.0":
-  version: 1.18.1
-  resolution: "@uniwebcms/module-sdk@npm:1.18.1"
+"@uniwebcms/module-sdk@npm:^1.22.0":
+  version: 1.22.0
+  resolution: "@uniwebcms/module-sdk@npm:1.22.0"
   dependencies:
     "@headlessui/react": "npm:^1.7.3"
     "@popperjs/core": "npm:^2.10.1"
@@ -3418,7 +3418,7 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 10/43904ddd1c8e348e264157edb4535bd027e95c09ace0de1ecbbef564465c7d927d885d362756346fa98cecf487aca1ae1b3b2361e755d921acedae881760dccf
+  checksum: 10/09aef8a8a40af76e791d7c855bb3186b04d6c575e5261c66cdac39478e22bfa62bade9191923c29571b381539e88e64747aaea8d73750cc46cdb11f05eaad7a1
   languageName: node
   linkType: hard
 
@@ -11159,7 +11159,7 @@ __metadata:
   dependencies:
     "@headlessui/react": "npm:^1.7.13"
     "@tailwindcss/line-clamp": "npm:^0.4.4"
-    "@uniwebcms/module-sdk": "npm:^1.18.0"
+    "@uniwebcms/module-sdk": "npm:^1.22.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-icons: "npm:^4.8.0"
