@@ -1,6 +1,6 @@
-# Uniweb Modules
+# Component Libraries
 
-This repository is a template for creating remote modules for websites made with [Uniweb CMS](https://uniwebcms.com). Each module is a collection of web components. Create a new repository from this [GitHub template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) as shown in the image below.
+This repository is a template for creating component libraries for websites made with [Uniweb CMS](https://uniwebcms.com). Each library is a collection of web components. Create a new repository from this [GitHub template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) as shown in the image below.
 
 <img src="https://docs.github.com/assets/cb-77734/mw-1440/images/help/repository/use-this-template-button.webp" width="300">
 
@@ -22,6 +22,11 @@ https://USER-NAME.github.io/REPO-NAME
 
 The goal is to create a repository and connect it with a test website so that you can create and modify web components and see the results instantly.
 
+The included sever project provides a simple yet powerful solution for quickly serving local files over the internet using a combination of `http-server` and Cloudflare's Tunnel service. You can create a free tunnel with a temporary URL, or a paid tunnel with a permanent URL. The sever project is configured to create a free, temporary tunnel. 
+
+**Important**: Install the `Cloudflared` command and make sure it's in your PATH. For the latest installation instructions, visit: [Cloudflare Tunnel
+Downloads](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/)
+
 If you already have Node.js, Yarn and a code editor such as VS Code installed, you are ready to start. Otherwise [configure the development toolchain](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/dev_toolchain.md) first.
 
 Next, you will need 2 terminal windows: one to run a web server, and another to build the project and watch for code changes.
@@ -35,12 +40,12 @@ yarn
 **Step 2**: Start a **web server** with a public tunnel pointing to it
 
 ``` bash
-yarn serve --tunnel
+yarn start
 ```
 
 The web server will serve the files located under the folder `build_dev`. Initially, the folder will contain a single file named `quick-tunnel.txt` with the URL of the current [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) pointing to http://localhost:3005. The quick tunnel URL changes everytime the server is started and has the form `https://[tunnel-sub-domain].trycloudflare.com`. 
 
-**Note**: The `--tunnel` (or `-t`) option requests the creation of a quick tunnel. It's also possible to use a permanent tunnel. For example, [Pagekite](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/pagekite.md) can be used to created a named tunnel (Cloudflare also offers a [similar solution](https://developers.cloudflare.com/pages/how-to/preview-with-cloudflare-tunnel/)). If using a permanent tunnel, do not set the `--tunnel` option when starting the server. Instead, set the URL of a permanent tunnel in the variable `TUNNEL_URL` in a `.env.dev` file.
+**Note**: It's also possible to use a permanent tunnel. For example, [Pagekite](https://github.com/uniwebcms/uniweb-module-builder/blob/main/docs/pagekite.md) can be used to created a named tunnel (Cloudflare also offers a [similar solution](https://developers.cloudflare.com/pages/how-to/preview-with-cloudflare-tunnel/)). If using a permanent tunnel, set the URL of a permanent tunnel in the variable `TUNNEL_URL` in a `.env.dev` file.
 
 > You should be able to see the contents of `build_dev` at http://localhost:3005 and also at the URL saved in `build_dev/quick-tunnel.txt`.
 

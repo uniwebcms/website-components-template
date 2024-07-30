@@ -15,6 +15,7 @@
         "watch:local": "cd builder && yarn run watch:local",
         "build:prod": "cd builder && yarn run build:prod",
         "build:prod-commit": "cd builder && yarn run build:prod-commit",
+        "start": "cd server && yarn run start",
         "serve": "cd builder && yarn run serve",
         "watch": "cd builder && yarn run watch:tunnel",
         "build:tutorial": "cd tutorial && yarn build:prod",
