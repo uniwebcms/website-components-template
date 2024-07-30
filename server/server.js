@@ -71,7 +71,7 @@ if (process.env.TUNNEL_URL) {
         crlfDelay: Infinity,
     });
 
-    const infoFile = path.resolve(absoluteDestPath, "quick_tunnel.txt");
+    const infoFile = path.resolve(absoluteDestPath, "quick-tunnel.txt");
 
     rl.on("line", (line) => {
         console.log(`cloudflared: ${line}`);
