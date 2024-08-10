@@ -7,7 +7,9 @@
       "start": "node server.js",
       "start:custom": "node server.js"
     },
-    "dependencies": {
+    "dependencies": {   
+    },
+    "devDependencies": {
       "dotenv": "^10.0.0",
       "http-server": "^14.1.1"
     },
