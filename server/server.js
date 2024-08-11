@@ -81,12 +81,14 @@ if (process.env.TUNNEL_URL) {
             if (match) {
               const url = match[0];
               fs.writeFile(infoFile, url, (err) => {
+                console.log("uniweb: +----------------------------+");
                 if (err) {
-                  console.error("Error writing to file:", err);
+                  console.error("uniweb: Error writing to file:", err);
                 } else {
-                  console.log(`Tunnel URL saved to ${infoFile}`);
-                  console.log(`The URL is: ${url}`);
+                  console.log(`uniweb: Tunnel URL saved to ${infoFile}`);
+                  console.log(`uniweb: The URL is: ${url}`);
                 }
+                console.log("uniweb: +----------------------------+");
               });
             }
         }
