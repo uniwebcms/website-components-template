@@ -79,14 +79,15 @@ if (process.env.TUNNEL_URL) {
         if (line.includes("https://")) {
             const match = line.match(/(https:\/\/[^\s]+)/);
             if (match) {
-            const url = match[0];
-            fs.writeFile(infoFile, url, (err) => {
+              const url = match[0];
+              fs.writeFile(infoFile, url, (err) => {
                 if (err) {
-                console.error("Error writing to file:", err);
+                  console.error("Error writing to file:", err);
                 } else {
-                console.log(`Tunnel URL saved to ${infoFile}`);
+                  console.log(`Tunnel URL saved to ${infoFile}`);
+                  console.log(`The URL is: ${url}`);
                 }
-            });
+              });
             }
         }
     });
